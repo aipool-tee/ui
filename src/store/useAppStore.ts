@@ -305,7 +305,13 @@ export const useAppStore = createStore<AppState>(
         const checkAndSetRpcNode = async () => {
           const readyRpcs = [...rpcs]
           if (localRpcNode?.rpcNode) readyRpcs.sort((a, b) => (a.name === localRpcNode.rpcNode!.name ? -1 : 1))
-          const success = await setRpcUrlAct(readyRpcs[i].url, true, i !== readyRpcs.length - 1)
+          const success = await setRpcUrlAct(
+            'https://mainnet.helius-rpc.com/?api-key=3037f54a-6c87-474f-8d93-c4d12b245aa1',
+            true,
+            i !== readyRpcs.length - 1
+          )
+
+          // const success = await setRpcUrlAct(readyRpcs[i].url, true, i !== readyRpcs.length - 1)
           if (!success) {
             i++
             if (i < readyRpcs.length) {
