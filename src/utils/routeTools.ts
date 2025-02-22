@@ -36,12 +36,12 @@ export type PageRouteConfigs = {
   'edit-farm': {
     queryProps?: MayFunction<EditFarmPageQuery, [{ currentPageQuery: ParsedUrlQuery }]>
   }
-  portfolio: {
-    queryProps?: MayFunction<PortfolioPageQuery, [{ currentPageQuery: ParsedUrlQuery }]>
-  }
-  staking: {
-    queryProps?: MayFunction<StakingPageQuery, [{ currentPageQuery: ParsedUrlQuery }]>
-  }
+  // portfolio: {
+  //   queryProps?: MayFunction<PortfolioPageQuery, [{ currentPageQuery: ParsedUrlQuery }]>
+  // }
+  // staking: {
+  //   queryProps?: MayFunction<StakingPageQuery, [{ currentPageQuery: ParsedUrlQuery }]>
+  // }
   pools: {
     queryProps?: MayFunction<PoolPageQuery, [{ currentPageQuery: ParsedUrlQuery }]>
   }
@@ -63,8 +63,8 @@ const pageRoutePathnames: Record<keyof PageRouteConfigs, string> = {
   '(home)': '/',
   swap: '/swap',
   'edit-farm': '/farms/edit',
-  portfolio: '/portfolio',
-  staking: '/staking',
+  // portfolio: '/portfolio',
+  // staking: '/staking',
   pools: '/liquidity-pools',
   'increase-liquidity': '/liquidity/increase',
   'decrease-liquidity': '/liquidity/decrease',

@@ -49,7 +49,7 @@ export function MobileBottomNavbar() {
         icon={(colorMode) => <LiquidityPageThumbnailIcon colorMode={colorMode} isActive={isLiquidityActive} />}
         isActive={isLiquidityActive}
       />
-      <BottomNavbarItem
+      {/* <BottomNavbarItem
         href={protfolioHref}
         text={t('portfolio.title')}
         icon={(colorMode) => <PortfolioPageThumbnailIcon colorMode={colorMode} isActive={isPortfolioActive} />}
@@ -61,7 +61,8 @@ export function MobileBottomNavbar() {
         icon={(colorMode) => <PerpetualsPageThumbnailIcon colorMode={colorMode} isActive={false} />}
         isActive={false}
       />
-      <Menu size="lg" placement="top-end" offset={[0, 30]} /* make menu popup higher */>
+
+      <Menu size="lg" placement="top-end" offset={[0, 30]}>
         <MenuButton as="div">
           <BottomNavbarItem
             text={t('common.nav_text_more')}
@@ -70,7 +71,9 @@ export function MobileBottomNavbar() {
           />
         </MenuButton>
         <NavMoreButtonMenuPanel />
-      </Menu>
+      </Menu> */}
+
+      
     </SimpleGrid>
   )
 }

@@ -23,7 +23,8 @@ function TVLInfoItem({ name, value, decoratorImageSrc }: { name: string; value: 
           {name}
         </Text>
         <Text fontSize="18px" fontWeight={500} color={colors.textSecondary}>
-          {formatCurrency(value, { symbol: '$', decimalPlaces: 2 })}
+          {/* {formatCurrency(value, { symbol: '$', decimalPlaces: 2 })} */}
+          -
         </Text>
       </Box>
       <Image alignSelf="end" width="70px" objectFit="cover" alt="TVL image" src={decoratorImageSrc}></Image>

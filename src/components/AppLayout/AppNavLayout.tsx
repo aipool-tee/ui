@@ -99,7 +99,7 @@ function AppNavLayout({
           <HStack flexGrow={1} justify="start" overflow={['auto', 'visible']} gap={15}>
             <RouteLink href="/swap" isActive={pathname === '/swap'} title={t('swap.title')} />
             <RouteLink href="/liquidity-pools" isActive={pathname.includes('/liquidity')} title={t('liquidity.title')} />
-            <RouteLink href="/portfolio" isActive={pathname === '/portfolio'} title={t('portfolio.title')} />
+            {/* <RouteLink href="/portfolio" isActive={pathname === '/portfolio'} title={t('portfolio.title')} />
             <RouteLink href="https://perps.raydium.io" isActive={false} title={t('perpetuals.title')} />
             <Menu size="lg">
               <MenuButton fontSize={'lg'} px={4} py={2}>
@@ -113,7 +113,7 @@ function AppNavLayout({
                 </Flex>
               </MenuButton>
               <NavMoreButtonMenuPanel />
-            </Menu>
+            </Menu> */}
           </HStack>
         </Desktop>
 

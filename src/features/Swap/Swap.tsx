@@ -31,7 +31,7 @@ export default function Swap() {
   // const { inputMint: cacheInput, outputMint: cacheOutput } = getSwapPairCache()
   const [inputMint, setInputMint] = useState<string>(PublicKey.default.toBase58())
   const [outputMint, setOutputMint] = useState<string>(RAYMint.toBase58())
-  const [isPCChartShown, setIsPCChartShown] = useState<boolean>(true)
+  const [isPCChartShown, setIsPCChartShown] = useState<boolean>(false)
   const [isMobileChartShown, setIsMobileChartShown] = useState<boolean>(false)
   const [isChartLeft, setIsChartLeft] = useState<boolean>(true)
   const { isMobile } = useResponsive()
@@ -140,7 +140,7 @@ export default function Swap() {
             </MoonpayBuy>
             <HStack>
               <SlippageAdjuster />
-              <Tooltip
+              {/* <Tooltip
                 label={t('swap.blink_referral_desc', {
                   symbol: outputMint === solMintAddress ? tokenMap.get(inputMint)?.symbol : tokenMap.get(outputMint)?.symbol
                 })}
@@ -160,9 +160,9 @@ export default function Swap() {
                 >
                   <LinkIcon />
                 </Box>
-              </Tooltip>
+              </Tooltip> */}
 
-              {!isMobile && isPCChartShown && (
+              {/* {!isMobile && isPCChartShown && (
                 <Box
                   cursor="pointer"
                   onClick={() => {
@@ -171,8 +171,8 @@ export default function Swap() {
                 >
                   <SwapExchangeIcon />
                 </Box>
-              )}
-              <Box
+              )} */}
+              {/* <Box
                 cursor="pointer"
                 onClick={() => {
                   if (!isMobile) {
@@ -189,7 +189,7 @@ export default function Swap() {
                     <SwapChatEmptyIcon />
                   </Box>
                 )}
-              </Box>
+              </Box> */}
             </HStack>
           </HStack>
         </GridItem>

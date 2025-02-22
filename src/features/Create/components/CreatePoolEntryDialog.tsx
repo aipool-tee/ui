@@ -200,7 +200,7 @@ export function CreatePoolEntryDialogBody({ type, onChange }: { type: CreateTarg
                       }
                       onClickSelf={() => onChange('concentrated-liquidity')}
                     />
-                    <PoolTypeItem
+                    {/* <PoolTypeItem
                       isActive={type === 'standard-amm'}
                       content={
                         <Box>
@@ -223,7 +223,7 @@ export function CreatePoolEntryDialogBody({ type, onChange }: { type: CreateTarg
                         </Box>
                       }
                       onClickSelf={() => onChange('legacy-amm')}
-                    />
+                    /> */}
                   </Stack>
                 </>
               )
@@ -273,7 +273,7 @@ export function CreatePoolEntryDialogBody({ type, onChange }: { type: CreateTarg
                     }
                     onClickSelf={() => onChange('clmm-lock')}
                   />
-                  <PoolTypeItem
+                  {/* <PoolTypeItem
                     isActive={type === 'cpmm-lock'}
                     content={
                       <Text whiteSpace="nowrap" fontSize="sm">
@@ -281,7 +281,7 @@ export function CreatePoolEntryDialogBody({ type, onChange }: { type: CreateTarg
                       </Text>
                     }
                     onClickSelf={() => onChange('cpmm-lock')}
-                  />
+                  /> */}
                 </Stack>
               )
             : undefined
