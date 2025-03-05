@@ -45,6 +45,7 @@ import { debounce } from '@/utils/functionMethods'
 import QuestionCircleIcon from '@/icons/misc/QuestionCircleIcon'
 import Tooltip from '@/components/Tooltip'
 
+const METAVMint = new PublicKey('HCgvbV9Qcf9TVGPGKMGbVEj8WwwVD6HhTt5E2i3qkeN9')
 export function SwapPanel({
   onInputMintChange,
   onOutputMintChange,
@@ -77,7 +78,7 @@ export function SwapPanel({
   const [inputMint, setInputMint] = useState<string>(PublicKey.default.toBase58())
   const [swapType, setSwapType] = useState<'BaseIn' | 'BaseOut'>('BaseIn')
 
-  const [outputMint, setOutputMint] = useState<string>(RAYMint.toBase58())
+  const [outputMint, setOutputMint] = useState<string>(METAVMint.toBase58())
   const [tokenInput, tokenOutput] = [tokenMap.get(inputMint), tokenMap.get(outputMint)]
   const [cacheLoaded, setCacheLoaded] = useState(false)
   const isTokenLoaded = tokenMap.size > 0
@@ -379,6 +380,7 @@ export function SwapPanel({
           <Text>{t('swap.error_sol_fee_not_insufficient', { amount: formatToRawLocaleStr(DEFAULT_SOL_RESERVER) })}</Text>
         </Flex>
       ) : null}
+      {/* Unwrap sol */}
       {wsolBalance.isZero ? null : (
         <Flex
           rounded="md"

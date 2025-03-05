@@ -193,6 +193,7 @@ export default function Swap() {
             </HStack>
           </HStack>
         </GridItem>
+        {/* This is the swap */}
         <GridItem ref={swapPanelRef} gridArea="panel">
           <PanelCard p={[3, 6]} flexGrow={['1', 'unset']}>
             <SwapPanel

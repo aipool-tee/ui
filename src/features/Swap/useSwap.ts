@@ -52,7 +52,7 @@ export default function useSwap(props: {
           txVersion === TxVersion.V0 ? 'V0' : 'LEGACY'
         }`
       : null
-
+  console.log('xxxx url', url)
   const updateAmount = useCallback(
     debounce((val: string) => {
       setAmount(val)
@@ -69,6 +69,7 @@ export default function useSwap(props: {
     focusThrottleInterval: refreshInterval,
     dedupingInterval: 30 * 1000
   })
+  console.log('xxxx data', data)
 
   return {
     response: data,
