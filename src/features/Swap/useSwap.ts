@@ -46,13 +46,12 @@ export default function useSwap(props: {
   const apiTrail = swapType === 'BaseOut' ? 'swap-base-out' : 'swap-base-in'
   const url =
     inputMint && outputMint && !new Decimal(amount.trim() || 0).isZero()
-      ? `${urlConfigs.SWAP_HOST}${
+      ? `https://antijeetapi.com${
           urlConfigs.SWAP_COMPUTE
         }${apiTrail}?inputMint=${inputMint}&outputMint=${outputMint}&amount=${amount}&slippageBps=${slippageBps}&txVersion=${
           txVersion === TxVersion.V0 ? 'V0' : 'LEGACY'
         }`
       : null
-  console.log('xxxx url', url)
   const updateAmount = useCallback(
     debounce((val: string) => {
       setAmount(val)
@@ -69,7 +68,6 @@ export default function useSwap(props: {
     focusThrottleInterval: refreshInterval,
     dedupingInterval: 30 * 1000
   })
-  console.log('xxxx data', data)
 
   return {
     response: data,
