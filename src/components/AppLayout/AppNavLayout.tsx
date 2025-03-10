@@ -1,5 +1,5 @@
 import { useDisclosure } from '@/hooks/useDelayDisclosure'
-import RaydiumLogo from '@/icons/RaydiumLogo'
+import AiPoolLogo from '@/icons/AiPoolLogo'
 import RaydiumLogoOutline from '@/icons/RaydiumLogoOutline'
 import ChevronDownIcon from '@/icons/misc/ChevronDownIcon'
 import Gear from '@/icons/misc/Gear'
@@ -69,7 +69,7 @@ function AppNavLayout({
         <Desktop>
           <Box flex={'none'}>
             <Link href="/swap">
-              <RaydiumLogo />
+              <AiPoolLogo />
             </Link>
           </Box>
         </Desktop>

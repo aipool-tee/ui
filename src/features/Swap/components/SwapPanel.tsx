@@ -45,7 +45,7 @@ import { debounce } from '@/utils/functionMethods'
 import QuestionCircleIcon from '@/icons/misc/QuestionCircleIcon'
 import Tooltip from '@/components/Tooltip'
 
-const METAVMint = new PublicKey('HCgvbV9Qcf9TVGPGKMGbVEj8WwwVD6HhTt5E2i3qkeN9')
+export const METAVMint = new PublicKey('HCgvbV9Qcf9TVGPGKMGbVEj8WwwVD6HhTt5E2i3qkeN9')
 export function SwapPanel({
   onInputMintChange,
   onOutputMintChange,

@@ -18,7 +18,7 @@ import { getSwapPairCache, setSwapPairCache } from './util'
 import { SwapKlinePanel } from './components/SwapKlinePanel'
 import { SwapKlinePanelMobileDrawer } from './components/SwapKlinePanelMobileDrawer'
 import { SwapKlinePanelMobileThumbnail } from './components/SwapKlinePanelMobileThumbnail'
-import { SwapPanel } from './components/SwapPanel'
+import { METAVMint, SwapPanel } from './components/SwapPanel'
 import { TimeType } from '@/hooks/pool/useFetchPoolKLine'
 import { SlippageAdjuster } from '@/components/SlippageAdjuster'
 import { getMintPriority } from '@/utils/token'
@@ -30,7 +30,7 @@ import useResponsive from '@/hooks/useResponsive'
 export default function Swap() {
   // const { inputMint: cacheInput, outputMint: cacheOutput } = getSwapPairCache()
   const [inputMint, setInputMint] = useState<string>(PublicKey.default.toBase58())
-  const [outputMint, setOutputMint] = useState<string>(RAYMint.toBase58())
+  const [outputMint, setOutputMint] = useState<string>(METAVMint.toBase58())
   const [isPCChartShown, setIsPCChartShown] = useState<boolean>(false)
   const [isMobileChartShown, setIsMobileChartShown] = useState<boolean>(false)
   const [isChartLeft, setIsChartLeft] = useState<boolean>(true)
