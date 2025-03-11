@@ -3,7 +3,6 @@ import { Box, Flex, Image, Text, useColorMode, useMediaQuery } from '@chakra-ui/
 import { useTranslation } from 'react-i18next'
 import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets'
 import { WalletReadyState } from '@solana/wallet-adapter-base'
-import RaydiumLogo from '@/icons/RaydiumLogo'
 import MoonPayIcon from '@/icons/misc/MoonPayIcon'
 import Plus from '@/icons/misc/Plus'
 import Phantom from '@/icons/misc/Phantom'
@@ -13,6 +12,7 @@ import AppNavLayout from '@/components/AppLayout/AppNavLayout'
 import WalletOnramp from '@/components/SolWallet/WalletOnramp'
 import { colors } from '@/theme/cssVariables'
 import useResponsive from '@/hooks/useResponsive'
+import AiPoolLogo from '@/icons/AiPoolLogo'
 
 export default function MoonpayPage() {
   const { t } = useTranslation()
@@ -85,7 +85,7 @@ export default function MoonpayPage() {
                   alignItems="center"
                   justifyContent="center"
                 >
-                  <RaydiumLogo width="64" height="64" />
+                  <AiPoolLogo width="64" height="64" />
                 </Flex>
                 <Plus width="25px" height="25px" color="#8d93b7" />
                 <Flex
