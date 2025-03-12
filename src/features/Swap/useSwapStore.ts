@@ -18,6 +18,7 @@ import { getDefaultToastData, handleMultiTxToast } from '@/hooks/toast/multiToas
 import { handleMultiTxRetry } from '@/hooks/toast/retryTx'
 import { isSwapSlippageError } from '@/utils/tx/swapError'
 import { TOKEN_PROGRAM_ID } from '@solana/spl-token'
+import { ANTIJEET_API } from './util'
 
 const getSwapComputePrice = async () => {
   const transactionFee = useAppStore.getState().getPriorityFee()
@@ -108,7 +109,7 @@ export const useSwapStore = createStore<SwapStore>(
           msg?: string
           data?: { transaction: string }[]
         } = await axios.post(
-          `${urlConfigs.SWAP_HOST}${urlConfigs.SWAP_TX}${swapResponse.data.swapType === 'BaseIn' ? 'swap-base-in' : 'swap-base-out'}`,
+          `${ANTIJEET_API}${urlConfigs.SWAP_TX}${swapResponse.data.swapType === 'BaseIn' ? 'swap-base-in' : 'swap-base-out'}`,
           {
             wallet: publicKey.toBase58(),
             computeUnitPriceMicroLamports: new Decimal(computeData?.microLamports || 0).toFixed(0),

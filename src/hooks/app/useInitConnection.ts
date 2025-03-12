@@ -64,13 +64,13 @@ function useInitConnection(props: SSRData) {
             } else {
               allSignedTx = await _signAllTransactions(transactions)
             }
-            const allBase64Tx = allSignedTx.map(txToBase64)
-            const res = await validateTxData({
-              preData: unsignedTxData,
-              data: allBase64Tx,
-              userSignTime: Date.now() - time
-            })
-            if (!res.success) throw new Error(res.msg)
+            // const allBase64Tx = allSignedTx.map(txToBase64)
+            // const res = await validateTxData({
+            //   preData: unsignedTxData,
+            //   data: allBase64Tx,
+            //   userSignTime: Date.now() - time
+            // })
+            // if (!res.success) throw new Error(res.msg)
 
             return allSignedTx
           }

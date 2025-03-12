@@ -9,6 +9,7 @@ import { debounce } from '@/utils/functionMethods'
 import { isValidPublicKey } from '@/utils/publicKey'
 import Decimal from 'decimal.js'
 import { ApiSwapV1OutSuccess, ApiSwapV1OutError } from './type'
+import { ANTIJEET_API } from './util'
 
 const fetcher = async (url: string): Promise<ApiSwapV1OutSuccess | ApiSwapV1OutError> =>
   axios.get(url, {
@@ -46,7 +47,7 @@ export default function useSwap(props: {
   const apiTrail = swapType === 'BaseOut' ? 'swap-base-out' : 'swap-base-in'
   const url =
     inputMint && outputMint && !new Decimal(amount.trim() || 0).isZero()
-      ? `https://antijeetapi.com${
+      ? `${ANTIJEET_API}${
           urlConfigs.SWAP_COMPUTE
         }${apiTrail}?inputMint=${inputMint}&outputMint=${outputMint}&amount=${amount}&slippageBps=${slippageBps}&txVersion=${
           txVersion === TxVersion.V0 ? 'V0' : 'LEGACY'

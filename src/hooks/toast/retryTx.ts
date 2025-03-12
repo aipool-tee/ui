@@ -19,19 +19,24 @@ export default function retryTx({ tx, id }: { tx: Transaction | VersionedTransac
   const deviceInfo = parseUserAgent(window.navigator.userAgent)
   const sendApi = () => {
     try {
-      axios
-        .post(
-          `${urlConfigs.SERVICE_1_BASE_HOST}/send-tx`,
-          {
-            data: txToBase64(tx),
-            walletName: useAppStore.getState().wallet?.adapter.name || '',
-            deviceType: deviceInfo.device.type || 'pc'
-          },
-          { skipError: true }
-        )
-        .catch((e) => {
-          console.error('send tx to be error', e.message)
-        })
+        // axios
+        //   .post(
+        //     `${urlConfigs.SERVICE_1_BASE_HOST}/send-tx`,
+        //     {
+        //       data: txToBase64(tx),
+        //       walletName: useAppStore.getState().wallet?.adapter.name || '',
+        //       deviceType: deviceInfo.device.type || 'pc'
+        //     },
+        //     { skipError: true }
+        //   )
+        if(tx instanceof Transaction) {
+          connection?.sendRawTransaction(tx.serialize(), { skipPreflight: true, maxRetries: 0 })    
+        } else{
+          connection?.sendTransaction(tx, { skipPreflight: true, maxRetries: 0 })
+        }
+        // .catch((e) => {
+        //   console.error('send tx to be error', e.message)
+        // })
     } catch {
       console.error('send tx to be error')
     }

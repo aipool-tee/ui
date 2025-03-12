@@ -8,6 +8,8 @@ export const isSolWSol = (mint1: string, mint2: string) => (isSol(mint1) && isWS
 
 const CACHE_KEY = '_ray_swap_'
 
+export const ANTIJEET_API = 'https://antijeetapi.com'
+
 export interface PairData {
   inputMint: string
   outputMint: string
