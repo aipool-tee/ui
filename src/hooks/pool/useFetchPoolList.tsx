@@ -9,6 +9,7 @@ import { useAppStore } from '@/store'
 import { MINUTE_MILLISECONDS } from '@/utils/date'
 import { formatPoolData, formatAprData } from './formatter'
 import { ReturnPoolType, ReturnFormattedPoolType } from './type'
+import { ANTIJEET_API } from '@/features/Swap/util'
 
 let refreshTag = Date.now()
 export const refreshPoolCache = () => (refreshTag = Date.now())
@@ -47,7 +48,7 @@ export default function useFetchPoolList<T extends PoolFetchType>(props?: {
     shouldFetch = true,
     showFarms
   } = props || {}
-  const [host, listUrl] = useAppStore((s) => [s.urlConfigs.BASE_HOST, s.urlConfigs.POOL_LIST], shallow)
+  const [host, listUrl] = useAppStore((s) => [ANTIJEET_API, s.urlConfigs.POOL_LIST], shallow)
 
   const url = host + listUrl + `?poolType=${showFarms ? `${type}Farm` : type}&poolSortField=${sort}&sortType=${order}&pageSize=${pageSize}`
 

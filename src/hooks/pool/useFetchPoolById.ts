@@ -10,6 +10,7 @@ import { MINUTE_MILLISECONDS } from '@/utils/date'
 import { ConditionalPoolType } from './type'
 import { useAppStore, useTokenStore } from '@/store'
 import { formatPoolData, poolInfoCache, formatAprData } from './formatter'
+import { ANTIJEET_API } from '@/features/Swap/util'
 
 const fetcher = ([url]: [url: string]) => axios.get<ApiV3PoolInfoItem[]>(url, { skipError: true })
 
@@ -43,7 +44,7 @@ export default function useFetchPoolById<T = ApiV3PoolInfoItem>(
     keepPreviousData
   } = props || {}
   const readyIdList = idList.filter((i) => i && isValidPublicKey(i) && !useTokenStore.getState().tokenMap.get(i)) as string[]
-  const [host, searchIdUrl] = useAppStore((s) => [s.urlConfigs.BASE_HOST, s.urlConfigs.POOL_SEARCH_BY_ID], shallow)
+  const [host, searchIdUrl] = useAppStore((s) => [ANTIJEET_API, s.urlConfigs.POOL_SEARCH_BY_ID], shallow)
 
   const cacheDataList = useMemo(
     () =>
