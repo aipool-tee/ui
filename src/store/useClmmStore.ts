@@ -21,6 +21,7 @@ import {
   getTransferAmountFeeV2,
   ClmmLockAddress
 } from '@raydium-io/raydium-sdk-v2'
+import { Raydium } from 'bifido-sdk'
 import { PublicKey, VersionedTransaction } from '@solana/web3.js'
 import createStore from '@/store/createStore'
 import { useAppStore, useTokenAccountStore, useLiquidityStore } from '@/store'
@@ -291,13 +292,25 @@ export const useClmmStore = createStore<ClmmState>(
       onCloseToast,
       ...txProps
     }) => {
-      const { raydium, wallet, txVersion } = useAppStore.getState()
+      const { raydium, connection, wallet, txVersion } = useAppStore.getState()
       if (!raydium) {
         toastSubject.next({ noRpc: true })
         return { txId: '' }
       }
       if (!poolInfo) return { txId: '' }
       try {
+        if (!connection) return { txId: '' }
+        console.log('before')
+
+        const bifido = await Raydium.load({
+          connection,
+
+          disableFeatureCheck: true,
+          loopMultiTxStatus: true,
+          blockhashCommitment: 'finalized'
+        })
+        console.log('after')
+
         const computeBudgetConfig = await getComputeBudgetConfig()
         const buildData = await raydium.clmm.openPositionFromBase({
           poolInfo,
