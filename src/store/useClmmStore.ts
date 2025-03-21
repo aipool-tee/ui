@@ -302,15 +302,6 @@ export const useClmmStore = createStore<ClmmState>(
         if (!connection) return { txId: '' }
         console.log('before')
 
-        const bifido = await Raydium.load({
-          connection,
-
-          disableFeatureCheck: true,
-          loopMultiTxStatus: true,
-          blockhashCommitment: 'finalized'
-        })
-        console.log('after')
-
         const computeBudgetConfig = await getComputeBudgetConfig()
         const buildData = await raydium.clmm.openPositionFromBase({
           poolInfo,
@@ -328,6 +319,7 @@ export const useClmmStore = createStore<ClmmState>(
           txVersion,
           nft2022: true
         })
+        console.log('after',buildData )
 
         const [amountA, amountB] = base === 'MintA' ? [baseAmount, otherAmountMax] : [otherAmountMax, baseAmount]
         const meta = getTxMeta({

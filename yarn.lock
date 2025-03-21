@@ -4541,12 +4541,12 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@raydium-io/raydium-sdk-v2@0.1.115-alpha":
-  version "0.1.115-alpha"
-  resolved "https://registry.yarnpkg.com/@raydium-io/raydium-sdk-v2/-/raydium-sdk-v2-0.1.115-alpha.tgz#afe36564205fd3a178e69c3e82e30e63a259caef"
-  integrity sha512-Ga0F3Yv8YDq9LLt18L+ab77NS2lOjNHfDoWYY8nCSGNPR7IX2EQHtarodGrf6tVupKY3jW9llo7sVv65B026ag==
+"@raydium-io/raydium-sdk-v2@npm:bifido-sdk@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/bifido-sdk/-/bifido-sdk-0.0.10.tgz#700948cf2822f211146b2d9e5621fa1554a0547c"
+  integrity sha512-guR2lJSkBNGJ2uY/2k7d/l/f+RpcjusY2CvHu2J3YDNVGI2LQRj9+eEmEkeM7whVqK5ybOCq/1mlGVLHEY6jyA==
   dependencies:
-    "@solana/buffer-layout" "^4.0.1"
+    "@coral-xyz/anchor" "^0.29.0"
     "@solana/spl-token" "^0.4.8"
     "@solana/web3.js" "^1.95.3"
     axios "^1.1.3"
@@ -8963,7 +8963,7 @@ bech32@^2.0.0:
   integrity sha512-LcknSilhIGatDAsY1ak2I8VtGaHNhgMSYVxFrGLXv+xLHytaKZKcaUJJUE7qmBr7h33o5YQwP55pMI0xmkpJwg==
 
 "bifido-sdk@file:../swap-sdk":
-  version "0.0.9"
+  version "0.0.10"
   dependencies:
     "@coral-xyz/anchor" "^0.29.0"
     "@solana/spl-token" "^0.4.8"
