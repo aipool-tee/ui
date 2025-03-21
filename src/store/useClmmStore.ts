@@ -303,8 +303,14 @@ export const useClmmStore = createStore<ClmmState>(
         console.log('before')
 
         const computeBudgetConfig = await getComputeBudgetConfig()
-        const raydium = await Bifido.load({
+        const bifido = await Bifido.load({
           connection,
+          logger: {
+            debug: console.debug,
+            info: console.info,
+            warn: console.warn,
+            error: console.error
+          }
         })
         console.log('after')
 
