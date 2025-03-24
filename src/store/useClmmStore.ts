@@ -304,13 +304,7 @@ export const useClmmStore = createStore<ClmmState>(
 
         const computeBudgetConfig = await getComputeBudgetConfig()
         const bifido = await Bifido.load({
-          connection,
-          logger: {
-            debug: console.debug,
-            info: console.info,
-            warn: console.warn,
-            error: console.error
-          }
+          connection
         })
         console.log('after')
 
@@ -330,7 +324,7 @@ export const useClmmStore = createStore<ClmmState>(
           txVersion,
           nft2022: true
         })
-        console.log('after',buildData )
+        console.log('after', buildData)
 
         const [amountA, amountB] = base === 'MintA' ? [baseAmount, otherAmountMax] : [otherAmountMax, baseAmount]
         const meta = getTxMeta({
@@ -877,8 +871,8 @@ export const useClmmStore = createStore<ClmmState>(
           mint1: { ...token1, address: token1.address },
           mint2: { ...token2, address: token2.address },
           ammConfig: { ...config, id: new PublicKey(config.id), fundOwner: '', description: '' },
-          initialPrice: new Decimal(price),
           computeBudgetConfig,
+          initialPrice: new Decimal(price) as any,
           forerunCreate,
           getObserveState,
           txVersion
@@ -979,7 +973,7 @@ export const useClmmStore = createStore<ClmmState>(
         const p = new Decimal(price || '0').clamp(1 / 10 ** Math.max(pool.mintA.decimals, pool.mintB.decimals), Number.MAX_SAFE_INTEGER)
         return TickUtils.getPriceAndTick({
           poolInfo: pool,
-          price: p,
+          price: p as any,
           baseIn
         })
       } catch (e: any) {
