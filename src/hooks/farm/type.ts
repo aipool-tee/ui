@@ -1,11 +1,4 @@
-import {
-  ApiV3Token,
-  FormatFarmInfoOut,
-  FormatFarmInfoOutV345,
-  FormatFarmInfoOutV6,
-  RewardInfoV345,
-  RewardInfoV6
-} from '@raydium-io/raydium-sdk-v2'
+import { ApiV3Token, FormatFarmInfoOut, FormatFarmInfoOutV345, FormatFarmInfoOutV6, RewardInfoV345, RewardInfoV6 } from 'bifido-sdk'
 import { FarmDecodeData } from './farmUtils'
 export enum FarmType {
   Raydium = 'Raydium',

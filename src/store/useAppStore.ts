@@ -2,15 +2,16 @@ import { Connection, PublicKey, Transaction, VersionedTransaction, EpochInfo, cl
 import {
   Raydium,
   RaydiumLoadParams,
+  JupTokenType,
   API_URLS,
   API_URL_CONFIG,
   ProgramIdConfig,
   ALL_PROGRAM_ID,
-  JupTokenType,
   AvailabilityCheckAPI3,
   TxVersion,
   TokenInfo
-} from '@raydium-io/raydium-sdk-v2'
+} from 'bifido-sdk'
+
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base'
 import { Wallet } from '@solana/wallet-adapter-react'
 import createStore from './createStore'

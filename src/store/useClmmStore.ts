@@ -20,8 +20,8 @@ import {
   TxVersion,
   getTransferAmountFeeV2,
   ClmmLockAddress
-} from '@raydium-io/raydium-sdk-v2'
-import { Raydium as Bifido } from 'bifido-sdk'
+} from 'bifido-sdk'
+import { Raydium as Bifido, USDCMint, JupTokenType } from 'bifido-sdk'
 import { PublicKey, VersionedTransaction } from '@solana/web3.js'
 import createStore from '@/store/createStore'
 import { useAppStore, useTokenAccountStore, useLiquidityStore } from '@/store'
@@ -303,10 +303,13 @@ export const useClmmStore = createStore<ClmmState>(
         console.log('before')
 
         const computeBudgetConfig = await getComputeBudgetConfig()
-        const bifido = await Bifido.load({
-          connection
-        })
-        console.log('after')
+        // const bifido = await Bifido.load({
+        //   connection
+        // })
+        // console.log('after', USDCMint.toBase58())
+        // console.log('after 1', JupTokenType)
+
+        // console.log('after 2', JupTokenType.Stric)
 
         const buildData = await raydium.clmm.openPositionFromBase({
           poolInfo,

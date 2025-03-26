@@ -1,4 +1,4 @@
-import { ApiV3Token } from '@raydium-io/raydium-sdk-v2'
+import { ApiV3Token } from 'bifido-sdk'
 import Tabs from '@/components/Tabs'
 import { aprColors } from '@/features/Pools/components/PoolListItemAprLine'
 import { AprKey, TimeAprData, TimeBasisOptionType, timeBasisOptions } from '@/hooks/pool/type'

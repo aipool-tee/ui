@@ -1,5 +1,5 @@
 import { Connection } from '@solana/web3.js'
-import { CpmmPoolInfoLayout } from '@raydium-io/raydium-sdk-v2'
+import { CpmmPoolInfoLayout } from 'bifido-sdk'
 import { useAppStore } from '@/store'
 import { MINUTE_MILLISECONDS } from '@/utils/date'
 import useSWR from 'swr'

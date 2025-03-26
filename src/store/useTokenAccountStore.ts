@@ -1,12 +1,4 @@
-import {
-  parseTokenAccountResp,
-  TokenAccount,
-  TokenAccountRaw,
-  WSOLMint,
-  splAccountLayout,
-  getATAAddress,
-  TxBuilder
-} from '@raydium-io/raydium-sdk-v2'
+import { parseTokenAccountResp, TokenAccount, TokenAccountRaw, WSOLMint, splAccountLayout, getATAAddress, TxBuilder } from 'bifido-sdk'
 import { PublicKey, KeyedAccountInfo, Commitment, AccountInfo, RpcResponseAndContext, GetProgramAccountsResponse } from '@solana/web3.js'
 import {
   TOKEN_PROGRAM_ID,

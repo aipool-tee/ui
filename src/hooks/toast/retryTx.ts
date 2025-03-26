@@ -3,7 +3,7 @@ import { parseUserAgent } from 'react-device-detect'
 import { retry, idToIntervalRecord, cancelRetry } from '@/utils/common'
 import { useAppStore } from '@/store'
 import axios from '@/api/axios'
-import { txToBase64 } from '@raydium-io/raydium-sdk-v2'
+import { txToBase64 } from 'bifido-sdk'
 
 const retryRecord = new Map<
   string,
@@ -19,24 +19,24 @@ export default function retryTx({ tx, id }: { tx: Transaction | VersionedTransac
   const deviceInfo = parseUserAgent(window.navigator.userAgent)
   const sendApi = () => {
     try {
-        // axios
-        //   .post(
-        //     `${urlConfigs.SERVICE_1_BASE_HOST}/send-tx`,
-        //     {
-        //       data: txToBase64(tx),
-        //       walletName: useAppStore.getState().wallet?.adapter.name || '',
-        //       deviceType: deviceInfo.device.type || 'pc'
-        //     },
-        //     { skipError: true }
-        //   )
-        if(tx instanceof Transaction) {
-          connection?.sendRawTransaction(tx.serialize(), { skipPreflight: true, maxRetries: 0 })    
-        } else{
-          connection?.sendTransaction(tx, { skipPreflight: true, maxRetries: 0 })
-        }
-        // .catch((e) => {
-        //   console.error('send tx to be error', e.message)
-        // })
+      // axios
+      //   .post(
+      //     `${urlConfigs.SERVICE_1_BASE_HOST}/send-tx`,
+      //     {
+      //       data: txToBase64(tx),
+      //       walletName: useAppStore.getState().wallet?.adapter.name || '',
+      //       deviceType: deviceInfo.device.type || 'pc'
+      //     },
+      //     { skipError: true }
+      //   )
+      if (tx instanceof Transaction) {
+        connection?.sendRawTransaction(tx.serialize(), { skipPreflight: true, maxRetries: 0 })
+      } else {
+        connection?.sendTransaction(tx, { skipPreflight: true, maxRetries: 0 })
+      }
+      // .catch((e) => {
+      //   console.error('send tx to be error', e.message)
+      // })
     } catch {
       console.error('send tx to be error')
     }

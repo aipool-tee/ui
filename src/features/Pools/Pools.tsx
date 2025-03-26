@@ -16,7 +16,7 @@ import {
   useDisclosure,
   useUpdateEffect
 } from '@chakra-ui/react'
-import { ApiV3Token, FetchPoolParams, PoolFetchType } from '@raydium-io/raydium-sdk-v2'
+import { ApiV3Token, FetchPoolParams, PoolFetchType } from 'bifido-sdk'
 import { ChangeEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -133,7 +133,7 @@ export default function Pools() {
       name: 'Concentrated',
       label: isEN && isMobile ? 'CLMM' : t('liquidity.concentrated'),
       value: PoolFetchType.Concentrated
-    },
+    }
     // {
     //   name: 'Standard',
     //   label: isEN && isMobile ? 'STANDARD' : t('liquidity.standard'),
