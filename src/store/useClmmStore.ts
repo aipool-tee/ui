@@ -21,7 +21,6 @@ import {
   getTransferAmountFeeV2,
   ClmmLockAddress
 } from 'bifido-sdk'
-import { Raydium as Bifido, USDCMint, JupTokenType } from 'bifido-sdk'
 import { PublicKey, VersionedTransaction } from '@solana/web3.js'
 import createStore from '@/store/createStore'
 import { useAppStore, useTokenAccountStore, useLiquidityStore } from '@/store'
