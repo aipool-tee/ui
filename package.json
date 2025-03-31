@@ -79,7 +79,7 @@
     "@walletconnect/solana-adapter": "^0.0.5",
     "@wormhole-foundation/wormhole-connect": "^0.3.21",
     "axios": "^1.2.6",
-    "bifido-sdk": "0.0.10",
+    "bifido-sdk": "0.0.14",
     "bn.js": "^5.2.1",
     "bs58": "^5.0.0",
     "compare-versions": "^6.1.0",
