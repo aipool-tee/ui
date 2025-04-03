@@ -1,7 +1,5 @@
 import { useDisclosure } from '@/hooks/useDelayDisclosure'
 import AiPoolLogo from '@/icons/AiPoolLogo'
-import RaydiumLogoOutline from '@/icons/RaydiumLogoOutline'
-import ChevronDownIcon from '@/icons/misc/ChevronDownIcon'
 import Gear from '@/icons/misc/Gear'
 import { useAppStore } from '@/store'
 import { colors } from '@/theme/cssVariables'
@@ -75,7 +73,7 @@ function AppNavLayout({
         </Desktop>
         <Mobile>
           <HStack>
-            <RaydiumLogoOutline />
+            <AiPoolLogo />
             <Text fontSize="xl" fontWeight="medium" color={colors.textSecondary}>
               {pathname === '/swap'
                 ? t('swap.title')

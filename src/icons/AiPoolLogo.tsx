@@ -3,7 +3,7 @@ import { SvgIcon } from './type'
 export default function AiPoolLogo(props: SvgIcon) {
   return (
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="133.000000pt" height="110.000000pt" viewBox="0 0 453.000000 410.000000"
+ width="73.000000pt" height="70.000000pt" viewBox="0 0 453.000000 410.000000"
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,410.000000) scale(0.100000,-0.100000)"
