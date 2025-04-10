@@ -299,16 +299,8 @@ export const useClmmStore = createStore<ClmmState>(
       if (!poolInfo) return { txId: '' }
       try {
         if (!connection) return { txId: '' }
-        console.log('before')
 
         const computeBudgetConfig = await getComputeBudgetConfig()
-        // const bifido = await Bifido.load({
-        //   connection
-        // })
-        // console.log('after', USDCMint.toBase58())
-        // console.log('after 1', JupTokenType)
-
-        // console.log('after 2', JupTokenType.Stric)
 
         const buildData = await raydium.clmm.openPositionFromBase({
           poolInfo,
@@ -326,7 +318,6 @@ export const useClmmStore = createStore<ClmmState>(
           txVersion,
           nft2022: true
         })
-        console.log('after', buildData)
 
         const [amountA, amountB] = base === 'MintA' ? [baseAmount, otherAmountMax] : [otherAmountMax, baseAmount]
         const meta = getTxMeta({
@@ -868,6 +859,7 @@ export const useClmmStore = createStore<ClmmState>(
       }
       try {
         const computeBudgetConfig = forerunCreate ? undefined : await getComputeBudgetConfig()
+
         const buildData = await raydium.clmm.createPool({
           programId: programIdConfig.CLMM_PROGRAM_ID,
           mint1: { ...token1, address: token1.address },

@@ -388,6 +388,7 @@ export default function CreatePosition() {
       new Decimal(tokenAmountRef.current[baseIn ? 0 : 1]).mul(10 ** (currentPool?.mintA.decimals ?? 0)).toFixed(0),
       new Decimal(tokenAmountRef.current[baseIn ? 1 : 0]).mul(10 ** (currentPool?.mintB.decimals ?? 0)).toFixed(0)
     ]
+
     openPositionAct({
       poolInfo: currentPool!,
       base: focusPoolARef.current ? 'MintA' : 'MintB',
