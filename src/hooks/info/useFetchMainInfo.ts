@@ -2,6 +2,7 @@ import useSWR from 'swr'
 import shallow from 'zustand/shallow'
 import axios from '@/api/axios'
 import { useAppStore } from '@/store'
+import { ANTIJEET_API } from '@/features/Swap/util'
 
 const fetcher = (url: string) => axios.get<{ tvl: number; volume24: number }>(url, { skipError: true })
 
