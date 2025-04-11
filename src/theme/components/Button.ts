@@ -3,7 +3,8 @@ import { colors } from '../cssVariables'
 export const Button = {
   baseStyle: {
     fontWeight: '500',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    borderRadius: 'xxl'
   },
   sizes: {
     xs: {

@@ -54,15 +54,17 @@ const MyApp = ({ Component, pageProps, ...props }: AppProps) => {
         <title>{pageProps?.title ? `${pageProps.title} AiPool` : 'AiPool'}</title>
       </Head>
       <DynamicProviders>
-        <DynamicContent {...props}>
-          {onlyContent ? (
-            <Component {...pageProps} />
-          ) : (
-            <DynamicAppNavLayout overflowHidden={overflowHidden}>
+        {/* <GlobalBackground> */}
+          <DynamicContent {...props}>
+            {onlyContent ? (
               <Component {...pageProps} />
-            </DynamicAppNavLayout>
-          )}
-        </DynamicContent>
+            ) : (
+              <DynamicAppNavLayout overflowHidden={overflowHidden}>
+                <Component {...pageProps} />
+              </DynamicAppNavLayout>
+            )}
+          </DynamicContent>
+        {/* </GlobalBackground> test */}
       </DynamicProviders>
     </>
   )

@@ -453,6 +453,7 @@ export function SwapPanel({
         isLoading={isComputing || isSending}
         loadingText={<div>{isSending ? t('transaction.transaction_initiating') : isComputing ? t('swap.computing') : ''}</div>}
         onClick={isHighRiskTx ? onHightRiskOpen : handleClickSwap}
+        height="60px"
       >
         <Text>
           {swapDisabled ? t('common.disabled') : swapError || t('swap.title')}

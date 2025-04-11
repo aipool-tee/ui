@@ -26,6 +26,7 @@ import Tooltip from '@/components/Tooltip'
 import { MoonpayBuy } from '@/components/Moonpay'
 import { toastSubject } from '@/hooks/toast/useGlobalToast'
 import useResponsive from '@/hooks/useResponsive'
+import BackgroundAnimation from '@/components/BackgroundAnimation'
 
 export default function Swap() {
   // const { inputMint: cacheInput, outputMint: cacheOutput } = getSwapPairCache()
@@ -111,6 +112,7 @@ export default function Swap() {
       mt={[0, getVHExpression([0, 800], [32, 1300])]}
       width={!isMobile && isPCChartShown ? 'min(100%, 1300px)' : undefined}
     >
+      <BackgroundAnimation> {/* diamond shapes 3js */}
       <Grid
         width="full"
         gridTemplate={[
@@ -132,10 +134,10 @@ export default function Swap() {
           <HStack justifyContent="space-between" my={[1, 0]}>
             <MoonpayBuy>
               <HStack gap={1}>
-                <CreditCardIcon />
-                <Text color={colors.textLink} fontWeight="medium">
+                {/* <CreditCardIcon /> */}
+                {/* <Text color={colors.textLink} fontWeight="medium">
                   Buy
-                </Text>
+                </Text> */}
               </HStack>
             </MoonpayBuy>
             <HStack>
@@ -245,6 +247,7 @@ export default function Swap() {
           )}
         </GridItem>
       </Grid>
+      </BackgroundAnimation>
     </VStack>
   )
 }

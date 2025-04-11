@@ -67,7 +67,8 @@ function AppNavLayout({
         <Desktop>
           <Box flex={'none'}>
             <Link href="/swap">
-              <AiPoolLogo />
+              {/* <AiPoolLogo /> */}
+              Iridium
             </Link>
           </Box>
         </Desktop>
