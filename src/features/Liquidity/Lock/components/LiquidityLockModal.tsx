@@ -83,6 +83,7 @@ function LiquidityLockModal({
                 <Flex flexDirection="column" gap={0.5}>
                   <Text color={colors.lightPurple} fontSize={['md', '20px']} fontWeight="500" lineHeight="24px">
                     {poolInfo.poolName.replace(' - ', '/')}
+                    aaaaaaaaa
                   </Text>
                   <Text fontSize="sm">
                     {formatCurrency(mintAmountA, {
