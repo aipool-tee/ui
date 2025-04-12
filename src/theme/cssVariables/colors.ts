@@ -23,16 +23,18 @@ export const darkColors: Record<keyof typeof colors, string> = {
   // selectActiveBg: 'rgba(226, 232, 240, 1)',
 
   // text colors for better visibility
-  textPrimary: '#051829',
-  textSecondary: '#89A7D6',
-  textTertiary: '#89A7D6',
-  textRevertPrimary: '#051829',
+  textPrimary: '#000000',
+  textSecondary: '#000000',
+  textTertiary: '#000000',
+  textRevertPrimary: '#000000',
+  textRed: '#FF0000',
+  textBlack: '#000000',
 
-  textLink: '#89A7D6',
-  textQuaternary: '#89A7D6',
-  textQuinary: '#89A7D6',
+  textLink: '#000000',
+  textQuaternary: '#000000',
+  textQuinary: '#000000',
   textSenary: 'rgba(137, 167, 214, 0.5)',
-  textSeptenary: '#89A7D6',
+  textSeptenary: '#000000',
   textPurple: '#89A7D6',
   textPink: '#89A7D6',
 
@@ -151,10 +153,12 @@ export const lightColors: Partial<typeof darkColors> = {
   backgroundTransparent10: 'rgba(171, 196, 255, 0.1)',
 
   // text
-  textPrimary: '#0B1022',
-  textSecondary: '#474ABB',
+  textPrimary: '#000000',
+  textSecondary: '#000000', // Colors wont change? cookies? idk..
   textTertiary: '#474ABB99',
   textRevertPrimary: '#ECF5FF',
+  textRed: '#FF0000',
+  textBlack: '#000000',
 
   textLink: '#22D1F8',
 
@@ -278,6 +282,8 @@ export const colors = {
   primary: 'var(--primary)',
   secondary: 'var(--secondary)',
   secondary10: 'var(--secondary10)',
+  textRed: 'var(--text-red)',
+  textBlack: 'var(--text-black)',
 
   // component color
   backgroundDark: 'var(--background-dark)',
@@ -293,7 +299,6 @@ export const colors = {
   // text
   /** white */
   textPrimary: 'var(--text-primary)',
-  /** #abc4ff */
   textSecondary: 'var(--text-secondary)',
   /** #abc4ff80 */
   textTertiary: 'var(--text-tertiary)',

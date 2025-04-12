@@ -210,6 +210,10 @@ export default function PoolListItem({
                     <Tag size="sm" variant="rounded">
                       {formatToRawLocaleStr(toPercentString(pool.feeRate * 100))}
                     </Tag>
+                    <Tag size="sm" variant="rounded" color={colors.textRed} border="1px solid" borderColor={colors.textRed}>
+                      {/* anti-snipe fee */}
+                      90%
+                    </Tag>
 
                     {pool.isOpenBook && (
                       <Tooltip label="This pool shares liquidity to the OpenBook order-book">
