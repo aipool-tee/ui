@@ -82,14 +82,15 @@
     "connect_wallet": "ウォレットを接続"
   },
   "badge": {
-    "suggested": "提案された",
-    "new": "新着",
-    "ongoing": "進行中",
-    "ended": "終了",
-    "updated": "更新済み",
-    "ecosystem": "エコシステム",
-    "fusion": "フュージョン",
-    "raydium": "Raydium"
+    "suggested": "Suggested",
+    "new": "New",
+    "ongoing": "Ongoing",
+    "ended": "Ended",
+    "updated": "Updated",
+    "ecosystem": "Ecosystem",
+    "fusion": "Fusion",
+    "raydium": "ai pool dex",
+    "openbook": "Openbook"
   },
   "setting_board": {
     "panel_title": "設定",

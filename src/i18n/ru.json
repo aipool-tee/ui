@@ -82,14 +82,15 @@
     "connect_wallet": "Подключить кошелек"
   },
   "badge": {
-    "suggested": "Предложенный",
-    "new": "Новый",
-    "ongoing": "Продолжаюшийся",
-    "ended": "Закончено",
-    "updated": "Обновлено",
-    "ecosystem": "Экосистема",
+    "suggested": "Suggested",
+    "new": "New",
+    "ongoing": "Ongoing",
+    "ended": "Ended",
+    "updated": "Updated",
+    "ecosystem": "Ecosystem",
     "fusion": "Fusion",
-    "raydium": "Raydium"
+    "raydium": "ai pool dex",
+    "openbook": "Openbook"
   },
   "setting_board": {
     "panel_title": "Настройки",

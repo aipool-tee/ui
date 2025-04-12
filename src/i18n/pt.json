@@ -82,14 +82,15 @@
     "connect_wallet": "Conectar carteira"
   },
   "badge": {
-    "suggested": "Sugerido",
-    "new": "Novo",
-    "ongoing": "Em andamento",
-    "ended": "Finalizado",
-    "updated": "Atualizado",
-    "ecosystem": "Ecossistema",
+    "suggested": "Suggested",
+    "new": "New",
+    "ongoing": "Ongoing",
+    "ended": "Ended",
+    "updated": "Updated",
+    "ecosystem": "Ecosystem",
     "fusion": "Fusion",
-    "raydium": "Raydium"
+    "raydium": "ai pool dex",
+    "openbook": "Openbook"
   },
   "setting_board": {
     "panel_title": "Configurações",
@@ -604,9 +605,9 @@
     "warning_note": "Os cálculos são uma estimativa e apenas para referência.",
     "mode_D_title": "Método Detalhado",
     "mode_D_desc": "Este método utiliza a mudança implícita (delta) na liquidez da pool, conforme determinado pela faixa de preço do usuário e tamanho da posição, para calcular o APR estimado.",
-    "mode_D_desc_brief": "O APR estimado é calculado pelo Método Delta. Clique no ícone ‘D’ para alternar para o Método do Multiplicador ou",
+    "mode_D_desc_brief": "O APR estimado é calculado pelo Método Delta. Clique no ícone 'D' para alternar para o Método do Multiplicador ou",
     "mode_M_title": "Método do Multiplicador",
     "mode_M_desc": "Este método aplica um multiplicador, determinado pela interseção da faixa de preço do usuário e da faixa de preço histórica da pool, para calcular o APR estimado.",
-    "mode_M_desc_brief": "O APR estimado é calculado pelo Método do Multiplicador. Clique no ícone ‘M’ para alternar para o Método Delta ou"
+    "mode_M_desc_brief": "O APR estimado é calculado pelo Método do Multiplicador. Clique no ícone 'M' para alternar para o Método Delta ou"
   }
 }

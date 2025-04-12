@@ -156,9 +156,9 @@ export default function SelectWalletModal({ wallets, isOpen, onSelectWallet, onC
             <Box overflow={'hidden'} display={'flex'} flexDirection={'column'}>
               <Box mb={5} color={colors.textTertiary} bg={colors.backgroundTransparent07} p={3} fontSize={['xs', 'sm']} rounded="md">
                 {t('wallet_connect_panel.desc')}{' '}
-                <Link href="https://raydium.io/docs/disclaimer/" isExternal>
+                {/* <Link href="https://raydium.io/docs/disclaimer/" isExternal>
                   {t('wallet_connect_panel.desc_link')}
-                </Link>
+                </Link> */}
               </Box>
               {/* <Box mb={6}>
               <Text fontSize={['sm', 'md']} color={colors.textPrimary} fontWeight={500} mb={4}>
@@ -259,25 +259,25 @@ export default function SelectWalletModal({ wallets, isOpen, onSelectWallet, onC
                   py={4}
                   px={5}
                 >
-                  <HStack>
+                  {/* <HStack>
                     <WalletSelectEggIcon />
                     <Text>{t('wallet_connect_panel.tour_title')}</Text>
-                  </HStack>
-                  <Link as={NextLink} href="https://docs.raydium.io/raydium/" _hover={{ textDecoration: 'none' }} isExternal>
+                  </HStack> */}
+                  {/* <Link as={NextLink} href="https://docs.raydium.io/raydium/" _hover={{ textDecoration: 'none' }} isExternal>
                     <HStack gap={1}>
                       <Text>{t('wallet_connect_panel.tour_desc')}</Text>
                       <ChevronRightIcon width={'14px'} height={'14px'} />
                     </HStack>
-                  </Link>
+                  </Link> */}
                 </Flex>
                 <Flex justifyContent="center" alignItems="center" color={colors.lightPurple} pt={isMobile ? 0 : 4} mb={isMobile ? 6 : 0}>
-                  <Text fontSize="xs">{t('wallet_connect_panel.buy_crypto_with_fiat')}</Text>
-                  <MoonpayBuy>
+                  <Text fontSize="xs">AI Pool DEX</Text>
+                  {/* <MoonpayBuy>
                     <HStack gap={0}>
                       <MoonPayIconWithText />
                       <ChevronRightIcon width={'16px'} height={'16px'} />
                     </HStack>
-                  </MoonpayBuy>
+                  </MoonpayBuy> fuck moonpay*/}
                 </Flex>
               </Box>
             </Box>
@@ -308,7 +308,7 @@ function WalletItem({
       cursor={selectable ? 'pointer' : 'not-allowed'}
       rounded="md"
       _hover={
-        selectable ? { bg: isLight ? '#8C6EEF' : '#524c92', color: isLight ? colors.textRevertPrimary : colors.textPrimary } : undefined
+        selectable ? { bg: isLight ? '#8C6EEF' : '#e7ff45', color: isLight ? colors.textRevertPrimary : colors.textPrimary } : undefined
       }
       bg={colors.backgroundDark}
       py={3}

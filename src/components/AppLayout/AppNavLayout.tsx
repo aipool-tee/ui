@@ -68,13 +68,14 @@ function AppNavLayout({
           <Box flex={'none'}>
             <Link href="/swap">
               {/* <AiPoolLogo /> */}
-              Iridium
+              Alpha v0
             </Link>
           </Box>
         </Desktop>
         <Mobile>
           <HStack>
-            <AiPoolLogo />
+            {/* <AiPoolLogo /> */}
+            Alpha v0
             <Text fontSize="xl" fontWeight="medium" color={colors.textSecondary}>
               {pathname === '/swap'
                 ? t('swap.title')
