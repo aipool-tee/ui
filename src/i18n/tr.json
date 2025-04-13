@@ -82,14 +82,15 @@
     "connect_wallet": "Cüzdanı Bağla"
   },
   "badge": {
-    "suggested": "Önerilen",
-    "new": "Yeni",
-    "ongoing": "Devam eden",
-    "ended": "Bitti",
-    "updated": "Güncellendi",
-    "ecosystem": "Ekosistem",
+    "suggested": "Suggested",
+    "new": "New",
+    "ongoing": "Ongoing",
+    "ended": "Ended",
+    "updated": "Updated",
+    "ecosystem": "Ecosystem",
     "fusion": "Fusion",
-    "raydium": "Raydium"
+    "raydium": "ai pool dex",
+    "openbook": "Openbook"
   },
   "setting_board": {
     "panel_title": "Ayarlar",

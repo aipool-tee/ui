@@ -82,14 +82,15 @@
     "connect_wallet": "连接钱包"
   },
   "badge": {
-    "suggested": "推荐",
-    "new": "新",
-    "ongoing": "进行中",
-    "end": "结束",
-    "updated": "更新",
-    "ecosystem": "生态系统",
-    "fusion": "荟萃",
-    "raydium": "Raydium"
+    "suggested": "Suggested",
+    "new": "New",
+    "ongoing": "Ongoing",
+    "ended": "Ended",
+    "updated": "Updated",
+    "ecosystem": "Ecosystem",
+    "fusion": "Fusion",
+    "raydium": "ai pool dex",
+    "openbook": "Openbook"
   },
   "setting_board": {
     "panel_title": "设置",

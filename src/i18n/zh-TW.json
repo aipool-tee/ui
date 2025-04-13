@@ -215,5 +215,16 @@
     "processed": "交易已處理",
     "failed": "交易錯誤",
     "view_detail": "查看交易細節"
+  },
+  "badge": {
+    "suggested": "Suggested",
+    "new": "New",
+    "ongoing": "Ongoing",
+    "ended": "Ended",
+    "updated": "Updated",
+    "ecosystem": "Ecosystem",
+    "fusion": "Fusion",
+    "raydium": "ai pool dex",
+    "openbook": "Openbook"
   }
 }

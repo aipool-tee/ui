@@ -1,5 +1,8 @@
 import { useDisclosure } from '@/hooks/useDelayDisclosure'
-import AiPoolLogo from '@/icons/AiPoolLogo'
+// import AiPoolLogo from '@/icons/AiPoolLogo'
+import Image from 'next/image'
+import poolboyLogo from '../../../public/images/poolboy.png'
+
 import Gear from '@/icons/misc/Gear'
 import { useAppStore } from '@/store'
 import { colors } from '@/theme/cssVariables'
@@ -67,14 +70,35 @@ function AppNavLayout({
         <Desktop>
           <Box flex={'none'}>
             <Link href="/swap">
-              {/* <AiPoolLogo /> */}
-              Iridium
+              <Box 
+                position="relative" 
+                sx={{
+                  '& img': {
+                    filter: 'grayscale(100%) brightness(0.3)',
+                    transition: 'filter 0.3s ease',
+                  },
+                  '&:hover img': {
+                    filter: 'grayscale(0%) brightness(1)',
+                  }
+                }}
+              >
+                <Image src={poolboyLogo} alt="AI Pool DEX" width={40} height={40} />
+              </Box>
             </Link>
           </Box>
         </Desktop>
         <Mobile>
           <HStack>
-            <AiPoolLogo />
+            <Box 
+              position="relative"
+              sx={{
+                '& img': {
+                  filter: 'grayscale(100%) brightness(0.3)',
+                },
+              }}
+            >
+              <Image src={poolboyLogo} alt="AI Pool DEX" width={32} height={32} />
+            </Box>
             <Text fontSize="xl" fontWeight="medium" color={colors.textSecondary}>
               {pathname === '/swap'
                 ? t('swap.title')

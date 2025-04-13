@@ -82,14 +82,15 @@
     "connect_wallet": "Conectar billetera"
   },
   "badge": {
-    "suggested": "Sugerido",
-    "new": "Nuevo",
-    "ongoing": "En curso",
-    "ended": "Finalizado",
-    "updated": "Actualizado",
-    "ecosystem": "Ecosistema",
-    "fusion": "Fusión",
-    "raydium": "Raydium"
+    "suggested": "Suggested",
+    "new": "New",
+    "ongoing": "Ongoing",
+    "ended": "Ended",
+    "updated": "Updated",
+    "ecosystem": "Ecosystem",
+    "fusion": "Fusion",
+    "raydium": "ai pool dex",
+    "openbook": "Openbook"
   },
   "setting_board": {
     "panel_title": "Configuración",

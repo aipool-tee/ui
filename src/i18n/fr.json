@@ -82,14 +82,15 @@
     "connect_wallet": "Connecter un Wallet"
   },
   "badge": {
-    "suggested": "Suggéré",
-    "new": "Nouveau",
-    "ongoing": "En cours",
-    "ended": "Terminé",
-    "updated": "Mis à jour",
+    "suggested": "Suggested",
+    "new": "New",
+    "ongoing": "Ongoing",
+    "ended": "Ended",
+    "updated": "Updated",
     "ecosystem": "Ecosystem",
     "fusion": "Fusion",
-    "raydium": "Raydium"
+    "raydium": "ai pool dex",
+    "openbook": "Openbook"
   },
   "setting_board": {
     "panel_title": "Paramètres",
@@ -349,7 +350,7 @@
     "section_department_tab_all": "Tout",
     "section_my_created_farms_item_edit_farm_button": "Editer Farm",
     "no_staked_farm": "Vous n'avez pas de staked RAY.",
-    "no_standard_positions": "You don’t have any standard liquidity positions.",
+    "no_standard_positions": "You don't have any standard liquidity positions.",
     "stake_item_stake_button": "Stake",
     "stake_item_migrate_button": "Migrer",
     "acceleraytor": "Acceleraytor",
@@ -604,9 +605,9 @@
     "warning_note": "Les calculs sont une estimation et ne sont donnés qu'à titre indicatif.",
     "mode_D_title": "Méthode detailée",
     "mode_D_desc": "Cette méthode utilise la variation implicite (delta) de la liquidité du pool, déterminée par la fourchette de prix et la taille de la position de l'utilisateur, pour calculer l'APR estimé..",
-    "mode_D_desc_brief": "L'estimation d'APR est calculé par la Delta Method. Clicker l'icone ‘D’ pour changer vers la Multiplier Method or",
+    "mode_D_desc_brief": "L'estimation d'APR est calculé par la Delta Method. Clicker l'icone 'D' pour changer vers la Multiplier Method or",
     "mode_M_title": "Multiplier Method",
     "mode_M_desc": "Cette méthode applique un multiplicateur, determinée par l'intersection du price range de la pool et l'historique du volume de la pool, pour calculer l'APR estimé.",
-    "mode_M_desc_brief": "L'estimation d'APR est calculé par la Multiplier Method. Clicker l'icone ‘M’ pour changer vers la Delta Method or"
+    "mode_M_desc_brief": "L'estimation d'APR est calculé par la Multiplier Method. Clicker l'icone 'M' pour changer vers la Delta Method or"
   }
 }

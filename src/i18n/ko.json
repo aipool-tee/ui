@@ -66,7 +66,7 @@
     "remove_token": "토큰 제거",
     "confirm_token": "토큰 확인",
     "user_added": "사용자 추가됨",
-    "beta_tooltip": "Raydium V3에 오신 것을 환영합니다! 업데이트가 진행 중입니다. V2 사이트는 여전히 <0>여기</0>에서 접근할 수 있습니다.",
+    "beta_tooltip": "ai pool dex에 오신 것을 환영합니다! 업데이트가 진행 중입니다. V2 사이트는 여전히 <0>여기</0>에서 접근할 수 있습니다.",
     "days": "일",
     "sort_by": "정렬 기준",
     "app_version_available": "새 버전 이용 가능",
@@ -98,15 +98,15 @@
     "connect_wallet": "지갑 연결"
   },
   "badge": {
-    "suggested": "추천",
-    "new": "신규",
-    "ongoing": "진행 중",
-    "ended": "종료됨",
-    "updated": "업데이트됨",
-    "ecosystem": "생태계",
-    "fusion": "퓨전",
-    "raydium": "Raydium",
-    "openbook": "오픈북"
+    "suggested": "Suggested",
+    "new": "New",
+    "ongoing": "Ongoing",
+    "ended": "Ended",
+    "updated": "Updated",
+    "ecosystem": "Ecosystem",
+    "fusion": "Fusion",
+    "raydium": "ai pool dex",
+    "openbook": "Openbook"
   },
   "setting_board": {
     "panel_title": "설정",
@@ -149,19 +149,19 @@
     "priority_fee_below_market_rate": "현재 최대 수수료가 시장 가격보다 낮습니다. 거래가 처리되도록 수수료를 인상하세요."
   },
   "wallet_connect_panel": {
-    "title": "지갑을 Raydium에 연결",
+    "title": "지갑을 ai pool dex에 연결",
     "desc": "지갑을 연결하면, 귀하는 이용 약관을 읽고 이해하며 동의한 것으로 간주됩니다",
     "desc_link": "면책 조항",
     "choose_network": "네트워크 선택",
     "choose_wallet": "지갑 선택",
     "show_uninstalled_wallets": "설치되지 않은 지갑 보기",
     "tour_title": "처음이신가요?",
-    "tour_desc": "Raydium 시작하기",
+    "tour_desc": "ai pool dex 시작하기",
     "disconnect": "연결 해제",
     "auto_confirm": "자동 확인",
     "auto_approve": "자동 승인",
-    "auto_confirm_tip": "Raydium의 모든 거래에 대해 자동 확인이 가능합니다. <0>더 알아보기</0>",
-    "auto_approve_tip_solflare": "Raydium의 모든 거래에 대해 자동 승인이 가능합니다.",
+    "auto_confirm_tip": "ai pool dex의 모든 거래에 대해 자동 확인이 가능합니다. <0>더 알아보기</0>",
+    "auto_approve_tip_solflare": "ai pool dex의 모든 거래에 대해 자동 승인이 가능합니다.",
     "phantom_wallet_not_installed": "이런... Phantom이 설치되지 않은 것 같습니다!",
     "install_phantom": "Phantom 설치",
     "how_to_install_phantom": "Phantom 설치 방법?",
@@ -696,12 +696,12 @@
     "button_initialize_liquidity_pool": "유동성 풀 초기화",
     "pool_create_integrated_with_openbook": "오픈북 마켓과 통합된 풀을 생성하려면 클릭하세요 ",
     "pool_create_integrated_with_openbook_link": "여기",
-    "initial_price_tooltip": "초기 가격은 초기 유동성을 위해 예치된 토큰의 비율로 설정됩니다. 토큰이 이미 Raydium에서 거래되고 있는 경우, 초기 가격은 현재 가격으로 자동으로 채워집니다.",
+    "initial_price_tooltip": "초기 가격은 초기 유동성을 위해 예치된 토큰의 비율로 설정됩니다. 토큰이 이미 ai pool dex에서 거래되고 있는 경우, 초기 가격은 현재 가격으로 자동으로 채워집니다.",
     "pool_creation_fee_note": "주의: 새로운 풀에 대한 생성 수수료는 {{subject}} SOL입니다.",
     "pool_creation_fee_tooltip": "0.15 SOL의 풀 생성 수수료는프론트 및 백엔드 인프라를 지원하기 위한 것입니다. 프로그램 계정 생성 및 네트워크 수수료에는 약 0.05 SOL이 필요합니다.",
     "custom": "사용자 정의",
     "start_now": "지금 시작",
-    "current_price_tooltip": "이것은 Raydium 기존 풀의 현재 가격입니다. 다른 초기 가격을 입력할 수 있지만, 가격 차이가 클 경우 차익 거래가 발생할 수 있습니다."
+    "current_price_tooltip": "이것은 ai pool dex 기존 풀의 현재 가격입니다. 다른 초기 가격을 입력할 수 있지만, 가격 차이가 클 경우 차익 거래가 발생할 수 있습니다."
   },
   "create_farm": {
     "weekly_rewards": "주간 리워드",
@@ -731,7 +731,7 @@
     "button_create_farm": "팜 생성",
     "error_text_create_farm": "사용자는 300 RAY가 필요합니다",
     "please_note": "주의 사항",
-    "please_note_des": "팜에 할당된 리워드는 팜이 시작된 후에는 인출할 수 없습니다. 새로 생성된 팜은 Solana 네트워크 상태에 따라 일반적으로 생성 후 10-30분 내에 Raydium에 나타납니다.",
+    "please_note_des": "팜에 할당된 리워드는 팜이 시작된 후에는 인출할 수 없습니다. 새로 생성된 팜은 Solana 네트워크 상태에 따라 일반적으로 생성 후 10-30분 내에 ai pool dex에 나타납니다.",
     "note_des": "이미 라이브인 풀이면 팜을 생성할 수 있습니다. 자세한 지침은 <0>CLMM</0> 또는 <1>표준</1> 팜 가이드를 읽으십시오.",
     "add_reward_token": "최대 3개의 리워드 토큰을 추가할 수 있습니다.",
     "estimated_rewards_week": "예상 리워드 / 주"
@@ -745,7 +745,7 @@
     "warning_note": "계산은 추정치이며 참고용입니다.",
     "mode_D_title": "상세 방법",
     "mode_D_desc": "이 방법은 사용자의 가격 범위와 포지션 크기에 따라 결정된 풀 유동성에 함축된 변화(델타)를 사용하여 추정 APR을 계산합니다.",
-    "mode_D_desc_brief": "추정 APR은 델타 방법으로 계산됩니다. ‘D’ 아이콘을 클릭하여 배수법으로 전환하거나",
+    "mode_D_desc_brief": "추정 APR은 델타 방법으로 계산됩니다. 'D' 아이콘을 클릭하여 배수법으로 전환하거나",
     "mode_M_title": "배수법",
     "mode_M_desc": "이 방법은 사용자의 가격 범위와 풀의 과거 가격 범위의 교차에 의해 결정된 배수를 적용하여 추정 APR을 계산합니다.",
     "mode_M_desc_brief": "추정 APR은 배수법으로 계산됩니다. 'M' 아이콘을 클릭하여 델타 방법으로 전환하거나"
@@ -764,15 +764,15 @@
     "step3": "3단계",
     "step1_text": "팬텀으로 회원가입하거나 로그인하십시오.",
     "step2_text": "문페이를 사용하여 Solana를 구매하여 거래 계좌를 충전하십시오.",
-    "step3_text": "Raydium에서 원클릭으로 토큰을 사고 팔 수 있습니다."
+    "step3_text": "ai pool dex에서 원클릭으로 토큰을 사고 팔 수 있습니다."
   },
   "disclaimer": {
     "title": "면책 조항",
-    "text1": "이 웹사이트에서 호스팅되는 사용자 인터페이스(이 \"인터페이스\")는 비중앙집권적이고 커뮤니티 주도의 블록체인 기반의 스마트 계약 및 도구  모음인 Raydium 프로토콜(“Raydium 프로토콜”)로 통하는 오픈 소스 프론트엔드 소프트웨어 포털입니다. 이 인터페이스 및 Raydium 프로토콜은 Raydium Holding Foundation에 의해 제공되지만, 프로토콜에서 수행되는 모든 거래는 관련 허가가 필요없는 스마트 계약에 의해 실행됩니다. 인터페이스는 오픈 소스이고 Raydium 프로토콜 및 관련 스마트 계약은 모든 사용자, 단체 또는 제3자가 접근할 수 있으므로 Raydium 프로토콜과 상호 작용할 수 있는 제3자 웹 및 모바일 사용자 인터페이스가 다수 있습니다.",
-    "text2": "이 인터페이스 및 Raydium 프로토콜은 '있는 그대로', 본인의 위험 부담 하에, 어떤 종류의 보증 없이 제공됩니다. Raydium Holding Foundation은 Raydium 프로토콜 또는 프로토콜에서 수행되는 거래 또는 관련 스마트 계약을 제공, 소유 또는 통제하지 않습니다. 이 인터페이스 또는 Raydium 프로토콜 및 관련 스마트 계약을 사용하거나 접근함으로써, 귀하는 이 인터페이스 또는 Raydium 프로토콜을 생성, 배포 또는 유지 관리하는 데 관여한 개발자나 단체가 이 인터페이스 또는 Raydium 프로토콜의 사용, 사용 불가 또는 다른 사용자와의 상호 작용과 관련된 모든 청구 또는 손해에 대해 책임을 지지 않음을 동의하게 됩니다. 여기에는 직접적, 간접적, 우발적, 특수한, 징벌적, 처벌적 또는 결과적 손해 또는 이익, 디지털 자산, 토큰 또는 기타 모든 가치의 손실이 포함됩니다.",
-    "text3": "Raydium 프로토콜은 벨라루스, 중앙아프리카공화국, 콩고민주공화국, 조선민주주의인민공화국, 우크라이나의 크림, 도네츠크 인민공화국, 루한스크인민공화국 지역, 쿠바, 이란, 리비아, 소말리아, 수단, 남수단, 시리아, 미국, 예멘, 짐바브웨 및 Raydium 프로토콜 접근 또는 사용이 금지된 기타 관할 지역(“금지된 관할 지역”)의 거주자에게는 제공되지 않습니다.",
-    "text4": "이 인터페이스, Raydium 프로토콜 또는 관련 스마트 계약을 사용하거나 접근함으로써, 귀하는 금지된 관할 지역에 위치하지 않으며, 그곳에서 결사, 설립되지 않았으며, 금지된 관할 지역의 시민이나 거주자가 아님을 진술하게 됩니다. 또한 귀하는 제재 하에 있지 않고, 미국 재무부 해외 자산 통제국, 유엔 안전 보장 이사회, 유럽 연합 또는 회원국 또는 기타 정부 당국이 유지하는 금지 또는 제한된 당사자 리스트 또는 제외 또는 거부된 사람 리스트 등에 포함되지 않았음을 진술하게 됩니다.",
+    "text1": "이 웹사이트에서 호스팅되는 사용자 인터페이스(이 \"인터페이스\")는 비중앙집권적이고 커뮤니티 주도의 블록체인 기반의 스마트 계약 및 도구  모음인 ai pool dex 프로토콜(“ai pool dex 프로토콜”)로 통하는 오픈 소스 프론트엔드 소프트웨어 포털입니다. 이 인터페이스 및 ai pool dex 프로토콜은 ai pool dex Holding Foundation에 의해 제공되지만, 프로토콜에서 수행되는 모든 거래는 관련 허가가 필요없는 스마트 계약에 의해 실행됩니다. 인터페이스는 오픈 소스이고 ai pool dex 프로토콜 및 관련 스마트 계약은 모든 사용자, 단체 또는 제3자가 접근할 수 있으므로 ai pool dex 프로토콜과 상호 작용할 수 있는 제3자 웹 및 모바일 사용자 인터페이스가 다수 있습니다.",
+    "text2": "이 인터페이스 및 ai pool dex 프로토콜은 '있는 그대로', 본인의 위험 부담 하에, 어떤 종류의 보증 없이 제공됩니다. ai pool dex Holding Foundation은 ai pool dex 프로토콜 또는 프로토콜에서 수행되는 거래 또는 관련 스마트 계약을 제공, 소유 또는 통제하지 않습니다. 이 인터페이스 또는 ai pool dex 프로토콜 및 관련 스마트 계약을 사용하거나 접근함으로써, 귀하는 이 인터페이스 또는 ai pool dex 프로토콜을 생성, 배포 또는 유지 관리하는 데 관여한 개발자나 단체가 이 인터페이스 또는 ai pool dex 프로토콜의 사용, 사용 불가 또는 다른 사용자와의 상호 작용과 관련된 모든 청구 또는 손해에 대해 책임을 지지 않음을 동의하게 됩니다. 여기에는 직접적, 간접적, 우발적, 특수한, 징벌적, 처벌적 또는 결과적 손해 또는 이익, 디지털 자산, 토큰 또는 기타 모든 가치의 손실이 포함됩니다.",
+    "text3": "ai pool dex 프로토콜은 벨라루스, 중앙아프리카공화국, 콩고민주공화국, 조선민주주의인민공화국, 우크라이나의 크림, 도네츠크 인민공화국, 루한스크인민공화국 지역, 쿠바, 이란, 리비아, 소말리아, 수단, 남수단, 시리아, 미국, 예멘, 짐바브웨 및 ai pool dex 프로토콜 접근 또는 사용이 금지된 기타 관할 지역(“금지된 관할 지역”)의 거주자에게는 제공되지 않습니다.",
+    "text4": "이 인터페이스, ai pool dex 프로토콜 또는 관련 스마트 계약을 사용하거나 접근함으로써, 귀하는 금지된 관할 지역에 위치하지 않으며, 그곳에서 결사, 설립되지 않았으며, 금지된 관할 지역의 시민이나 거주자가 아님을 진술하게 됩니다. 또한 귀하는 제재 하에 있지 않고, 미국 재무부 해외 자산 통제국, 유엔 안전 보장 이사회, 유럽 연합 또는 회원국 또는 기타 정부 당국이 유지하는 금지 또는 제한된 당사자 리스트 또는 제외 또는 거부된 사람 리스트 등에 포함되지 않았음을 진술하게 됩니다.",
     "agree_terms": "약관에 동의",
-    "enter_raydium": "Raydium 접속"
+    "enter_ai_pool_dex": "ai pool dex 접속"
   }
 }
