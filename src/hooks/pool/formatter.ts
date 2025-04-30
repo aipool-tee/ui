@@ -120,6 +120,7 @@ export function formatPoolData(pool: ApiV3PoolInfoItem): FormattedPoolInfoItem {
   return {
     ...formatAprData(pool),
     poolName: getPoolName(pool),
+    antisniperFee: (pool as any).antisniperFee,
     poolDecimals,
     recommendDecimal,
     isOpenBook: pool.pooltype.includes('OpenBookMarket'),

@@ -27,6 +27,7 @@ export interface FormattedPoolReward extends PoolFarmRewardInfo {
 }
 
 type FormattedExtendInfo = {
+  antisniperFee: number
   poolName: string
   poolDecimals: number
   isOpenBook: boolean

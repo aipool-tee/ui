@@ -19,6 +19,7 @@ export interface ApiSwapV1OutSuccess {
     outputMint: string
     outputAmount: string
     otherAmountThreshold: string
+    antisniperFee: number
     slippageBps: number
     priceImpactPct: number
     routePlan: {

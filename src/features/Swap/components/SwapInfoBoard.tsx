@@ -80,6 +80,18 @@ export function SwapInfoBoard({
           <MinimumReceiveValue tokenOutput={isBaseOut ? tokenInput : tokenOutput} amount={computedSwapResult?.otherAmountThreshold || ''} />
         </HStack>
         <HStack gap={4} py={1} justifyContent="space-between">
+          <ItemLabel name={'Antisniper Fee'} tooltip={'Fee applied to new pools to avoid snipers'} />
+          <Text
+            fontSize="xs"
+            color={isHighRiskPrice ? colors.semanticError : priceImpact > 1 ? colors.semanticWarning : colors.textSecondary}
+            fontWeight={500}
+          >
+            {computedSwapResult
+              ? `${formatToRawLocaleStr(toPercentString(computedSwapResult.antisniperFee, { notShowZero: true }))}`
+              : '-'}
+          </Text>
+        </HStack>
+        <HStack gap={4} py={1} justifyContent="space-between">
           <ItemLabel name={t('swap.info_price_impact')} tooltip={t('swap.info_price_impact_tooltip')} />
           <Text
             fontSize="xs"
