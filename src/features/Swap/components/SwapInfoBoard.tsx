@@ -42,7 +42,8 @@ export function SwapInfoBoard({
   const routeTokens = tokenInput && tokenOutput ? [tokenInput, tokenOutput] : undefined
   const isBaseOut = computedSwapResult?.swapType === 'BaseOut'
   const priceImpact = computedSwapResult?.priceImpactPct || 0
-  const isHighRiskPrice = priceImpact > 5
+  const antisniperFee = computedSwapResult?.antisniperFee || 0
+  const isHighRiskPrice = priceImpact > 5 || antisniperFee > 10
 
   useEffect(() => {
     refreshCircleRef.current?.restart()
@@ -53,7 +54,7 @@ export function SwapInfoBoard({
       <Box
         position="relative"
         boxShadow={isHighRiskPrice ? `0px 0px 12px 6px rgba(255, 78, 163, 0.15)` : 'none'}
-        bg={isHighRiskPrice ? 'rgba(255, 78, 163,0.1)' : colors.backgroundTransparent07}
+        bg={isHighRiskPrice ? 'rgba(255, 78, 163, 0.1)' : colors.backgroundTransparent07}
         borderWidth="1px"
         borderStyle="solid"
         borderColor={isHighRiskPrice ? colors.semanticError : colors.backgroundTransparent12}
@@ -86,9 +87,7 @@ export function SwapInfoBoard({
             color={isHighRiskPrice ? colors.semanticError : priceImpact > 1 ? colors.semanticWarning : colors.textSecondary}
             fontWeight={500}
           >
-            {computedSwapResult
-              ? `${formatToRawLocaleStr(toPercentString(computedSwapResult.antisniperFee, { notShowZero: true }))}`
-              : '-'}
+            {computedSwapResult ? `${formatToRawLocaleStr(toPercentString(computedSwapResult.antisniperFee, { notShowZero: true }))}` : '-'}
           </Text>
         </HStack>
         <HStack gap={4} py={1} justifyContent="space-between">

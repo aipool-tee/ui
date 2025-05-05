@@ -163,6 +163,10 @@ export default function PoolListItem({
               label={
                 <Box py={0.5}>
                   <AddressChip address={pool.id} renderLabel={`${t('common.pool_id')}:`} mb="2" textProps={{ fontSize: 'xs' }} />
+                  <Text fontSize="sm" color={colors.textSecondary} mb="2">
+                    AntiSniper fee: {pool.antisniperFee * 100}%
+                  </Text>
+
                   <AddressChip
                     address={baseToken.address}
                     renderLabel={<TokenAvatar token={baseToken} size="xs" />}
