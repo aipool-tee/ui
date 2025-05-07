@@ -70,34 +70,34 @@ function AppNavLayout({
         <Desktop>
           <Box flex={'none'}>
             <Link href="/swap">
-              <Box 
-                position="relative" 
+              <Box
+                position="relative"
                 sx={{
                   '& img': {
                     filter: 'grayscale(100%) brightness(0.3)',
-                    transition: 'filter 0.3s ease',
+                    transition: 'filter 0.3s ease'
                   },
                   '&:hover img': {
-                    filter: 'grayscale(0%) brightness(1)',
+                    filter: 'grayscale(0%) brightness(1)'
                   }
                 }}
               >
-                <Image src={poolboyLogo} alt="AI Pool DEX" width={40} height={40} />
+                <Image src={poolboyLogo} alt="Cobalt Dex" width={40} height={40} />
               </Box>
             </Link>
           </Box>
         </Desktop>
         <Mobile>
           <HStack>
-            <Box 
+            <Box
               position="relative"
               sx={{
                 '& img': {
-                  filter: 'grayscale(100%) brightness(0.3)',
-                },
+                  filter: 'grayscale(100%) brightness(0.3)'
+                }
               }}
             >
-              <Image src={poolboyLogo} alt="AI Pool DEX" width={32} height={32} />
+              <Image src={poolboyLogo} alt="Cobalt Dex" width={32} height={32} />
             </Box>
             <Text fontSize="xl" fontWeight="medium" color={colors.textSecondary}>
               {pathname === '/swap'

@@ -116,7 +116,7 @@
     "updated": "Updated",
     "ecosystem": "Ecosystem",
     "fusion": "Fusion",
-    "raydium": "ai pool dex",
+    "raydium": "Cobalt Dex",
     "openbook": "Openbook"
   },
   "setting_board": {
@@ -160,7 +160,7 @@
     "priority_fee_below_market_rate": "Your current max fee is below market rate. Increase it to ensure your transactions are processed."
   },
   "wallet_connect_panel": {
-    "title": "Connect your wallet to AI Pool DEX",
+    "title": "Connect your wallet to Cobalt Dex DEX",
     "desc": "By connecting your wallet, you acknowledge that you have read, understand and accept our terms.",
     "desc_link": "disclaimer",
     "choose_network": "Choose network",
@@ -168,12 +168,12 @@
     "show_uninstalled_wallets": "Show uninstalled wallets",
     "show_uninstalled": "Show uninstalled",
     "tour_title": "New here?",
-    "tour_desc": "Get started on ai pool dex",
+    "tour_desc": "Get started on Cobalt Dex dex",
     "disconnect": "Disconnect",
     "auto_confirm": "Auto Confirm",
     "auto_approve": "Auto Approve",
-    "auto_confirm_tip": "Auto-confirm is now available for all transactions on ai pool dex. <0>Learn More</0>",
-    "auto_approve_tip_solflare": "Auto-approve is now available for all transactions on ai pool dex.",
+    "auto_confirm_tip": "Auto-confirm is now available for all transactions on Cobalt Dex dex. <0>Learn More</0>",
+    "auto_approve_tip_solflare": "Auto-approve is now available for all transactions on Cobalt Dex dex.",
     "phantom_wallet_not_installed": "Oops... Looks like you don't have Phantom installed!",
     "install_phantom": "Install Phantom",
     "how_to_install_phantom": "How to install Phantom?",
@@ -773,13 +773,13 @@
     "button_initialize_liquidity_pool": "Initialize Liquidity Pool",
     "pool_create_integrated_with_openbook": "To create a pool that is integrated with an OpenBook market, click ",
     "pool_create_integrated_with_openbook_link": "here",
-    "initial_price_tooltip": "Initial price is set by the ratio of tokens deposited for initial liquidity. If the token is already trading on ai pool dex, initial price will be auto-filled with the current price.",
+    "initial_price_tooltip": "Initial price is set by the ratio of tokens deposited for initial liquidity. If the token is already trading on Cobalt Dex dex, initial price will be auto-filled with the current price.",
     "pool_creation_fee_note": "Note: A creation fee of {{subject}} SOL is required for new pools.",
     "pool_creation_fee_tooltip": "A pool creation fee of 0.15 SOL is currently reserved to support front and backend infrastructure. Approximately 0.05 SOL is required for program account creation and network fees.",
     "pool_ammv4_creation_fee_tooltip": "A pool creation fee of 0.15 SOL is currently reserved to support front and backend infrastructure. Approximately 0.3 SOL is required for OpenBook Market rent and program account creation.",
     "custom": "Custom",
     "start_now": "Start Now",
-    "current_price_tooltip": "This is the current price of an existing pool on ai pool dex. You can still enter a different initial price but be aware this may lead to arbitrage if the price difference is large."
+    "current_price_tooltip": "This is the current price of an existing pool on Cobalt Dex dex. You can still enter a different initial price but be aware this may lead to arbitrage if the price difference is large."
   },
   "create_farm": {
     "weekly_rewards": "Weekly Rewards",
@@ -809,7 +809,7 @@
     "button_create_farm": "Create Farm",
     "error_text_create_farm": "User must have 300 RAY",
     "please_note": "Please Note",
-    "please_note_des": "Rewards allocated to farms cannot be withdrawn after farming starts. Newly created farms generally appear on ai pool dex 10-30 minutes after creation, depending on Solana network status.",
+    "please_note_des": "Rewards allocated to farms cannot be withdrawn after farming starts. Newly created farms generally appear on Cobalt Dex dex 10-30 minutes after creation, depending on Solana network status.",
     "note_des": "A farm can be created for any pool that is already live. For detailed instructions, read the guide for <0>CLMM</0> or <1>Standard</1> farms.",
     "add_reward_token": "You can add up to 3 reward tokens.",
     "estimated_rewards_week": "Estimated rewards / week"
@@ -846,12 +846,12 @@
   },
   "disclaimer": {
     "title": "Disclaimer",
-    "text1": "This website-hosted user interface (this \"Interface\") is an open source frontend software portal to the ai pool dex protocol, a decentralized and community-driven collection of blockchain-enabled smart contracts and tools (the \"ai pool dex Protocol\"). This Interface and the ai pool dex Protocol are made available by the ai pool dex Holding Foundation, however all transactions conducted on the protocol are run by related permissionless smart contracts. As the Interface is open-sourced and the ai pool dex Protocol and its related smart contracts are accessible by any user, entity or third party, there are a number of third party web and mobile user-interfaces that allow for interaction with the ai pool dex Protocol.",
-    "text2": "THIS INTERFACE AND THE DEX PROTOCOL ARE PROVIDED \"AS IS\", AT YOUR OWN RISK, AND WITHOUT WARRANTIES OF ANY KIND. The ai pool dex Holding Foundation does not provide, own, or control the ai pool dex Protocol or any transactions conducted on the protocol or via related smart contracts. By using or accessing this Interface or the ai pool dex Protocol and related smart contracts, you agree that no developer or entity involved in creating, deploying or maintaining this Interface or the ai pool dex Protocol will be liable for any claims or damages whatsoever associated with your use, inability to use, or your interaction with other users of, this Interface or the ai pool dex Protocol, including any direct, indirect, incidental, special, exemplary, punitive or consequential damages, or loss of profits, digital assets, tokens, or anything else of value.",
-    "text3": "The ai pool dex Protocol is not available to residents of Belarus, the Central African Republic, The Democratic Republic of Congo, the Democratic People's Republic of Korea, the Crimea, Donetsk People's Republic, and Luhansk People's Republic regions of Ukraine, Cuba, Iran, Libya, Somalia, Sudan, South Sudan, Syria, the USA, Yemen, Zimbabwe and any other jurisdiction in which accessing or using the ai pool dex Protocol is prohibited (the \"Prohibited Jurisdictions\").",
-    "text4": "By using or accessing this Interface, the ai pool dex Protocol, or related smart contracts, you represent that you are not located in, incorporated or established in, or a citizen or resident of the Prohibited Jurisdictions. You also represent that you are not subject to sanctions or otherwise designated on any list of prohibited or restricted parties or excluded or denied persons, including but not limited to the lists maintained by the United States' Department of Treasury's Office of Foreign Assets Control, the United Nations Security Council, the European Union or its Member States, or any other government authority.",
+    "text1": "This website-hosted user interface (this \"Interface\") is an open source frontend software portal to the Cobalt Dex dex protocol, a decentralized and community-driven collection of blockchain-enabled smart contracts and tools (the \"Cobalt Dex dex Protocol\"). This Interface and the Cobalt Dex dex Protocol are made available by the Cobalt Dex dex Holding Foundation, however all transactions conducted on the protocol are run by related permissionless smart contracts. As the Interface is open-sourced and the Cobalt Dex dex Protocol and its related smart contracts are accessible by any user, entity or third party, there are a number of third party web and mobile user-interfaces that allow for interaction with the Cobalt Dex dex Protocol.",
+    "text2": "THIS INTERFACE AND THE DEX PROTOCOL ARE PROVIDED \"AS IS\", AT YOUR OWN RISK, AND WITHOUT WARRANTIES OF ANY KIND. The Cobalt Dex dex Holding Foundation does not provide, own, or control the Cobalt Dex dex Protocol or any transactions conducted on the protocol or via related smart contracts. By using or accessing this Interface or the Cobalt Dex dex Protocol and related smart contracts, you agree that no developer or entity involved in creating, deploying or maintaining this Interface or the Cobalt Dex dex Protocol will be liable for any claims or damages whatsoever associated with your use, inability to use, or your interaction with other users of, this Interface or the Cobalt Dex dex Protocol, including any direct, indirect, incidental, special, exemplary, punitive or consequential damages, or loss of profits, digital assets, tokens, or anything else of value.",
+    "text3": "The Cobalt Dex dex Protocol is not available to residents of Belarus, the Central African Republic, The Democratic Republic of Congo, the Democratic People's Republic of Korea, the Crimea, Donetsk People's Republic, and Luhansk People's Republic regions of Ukraine, Cuba, Iran, Libya, Somalia, Sudan, South Sudan, Syria, the USA, Yemen, Zimbabwe and any other jurisdiction in which accessing or using the Cobalt Dex dex Protocol is prohibited (the \"Prohibited Jurisdictions\").",
+    "text4": "By using or accessing this Interface, the Cobalt Dex dex Protocol, or related smart contracts, you represent that you are not located in, incorporated or established in, or a citizen or resident of the Prohibited Jurisdictions. You also represent that you are not subject to sanctions or otherwise designated on any list of prohibited or restricted parties or excluded or denied persons, including but not limited to the lists maintained by the United States' Department of Treasury's Office of Foreign Assets Control, the United Nations Security Council, the European Union or its Member States, or any other government authority.",
     "agree_terms": "Agree to terms",
-    "enter_raydium": "Enter ai pool dex"
+    "enter_raydium": "Enter Cobalt Dex dex"
   },
   "bridge": {
     "title": "Bridge"

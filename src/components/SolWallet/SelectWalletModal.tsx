@@ -271,7 +271,7 @@ export default function SelectWalletModal({ wallets, isOpen, onSelectWallet, onC
                   </Link> */}
                 </Flex>
                 <Flex justifyContent="center" alignItems="center" color={colors.lightPurple} pt={isMobile ? 0 : 4} mb={isMobile ? 6 : 0}>
-                  <Text fontSize="xs">AI Pool DEX</Text>
+                  <Text fontSize="xs">Cobalt Dex DEX</Text>
                   {/* <MoonpayBuy>
                     <HStack gap={0}>
                       <MoonPayIconWithText />
