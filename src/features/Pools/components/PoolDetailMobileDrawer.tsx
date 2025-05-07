@@ -234,7 +234,7 @@ export default function PoolDetailMobileDrawer({
           </VStack>
         </DrawerBody>
         <DrawerFooter bg="transparent">
-          <Button onClick={onDeposit} w={'full'}>
+          <Button display="block" width="100%" onClick={onDeposit} isDisabled={tvl ? Number(tvl) < 1 : false}>
             {t('button.deposit')}
           </Button>
         </DrawerFooter>
