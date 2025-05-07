@@ -39,9 +39,9 @@ const MyApp = ({ Component, pageProps, ...props }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="twitter:image" content="https://ipfs.io/ipfs/bafybeih7q6cbugold4vw6wgjpil3zxav26xmeojemr6u2lmktrdhwhm2qm" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@aipool_dao" />
-        <meta name="twitter:creator" content="@aipool_dao" />
-        <meta name="twitter:title" content="AiPool" />
+        <meta name="twitter:site" content="@cobaltdex_dao" />
+        <meta name="twitter:creator" content="@cobaltdex_dao" />
+        <meta name="twitter:title" content="CobaltDex" />
         <meta name="twitter:description" content="An on-chain order book AMM powering the evolution of DeFi " />
         <meta property="og:description" content="An on-chain order book AMM powering the evolution of DeFi " />
         <meta property="og:url" content="https://cobaltdex.com/" />
