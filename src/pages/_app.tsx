@@ -37,21 +37,21 @@ const MyApp = ({ Component, pageProps, ...props }: AppProps) => {
       <GoogleAnalytics gaId="G-DR3V6FTKE3" />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-        <meta name="twitter:image" content="https://img-v1.raydium.io/share/7be7ee6c-56b2-451e-a010-6c21e0db2ee5.png" />
+        <meta name="twitter:image" content="https://ipfs.io/ipfs/bafybeih7q6cbugold4vw6wgjpil3zxav26xmeojemr6u2lmktrdhwhm2qm" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aipool_dao" />
         <meta name="twitter:creator" content="@aipool_dao" />
         <meta name="twitter:title" content="AiPool" />
         <meta name="twitter:description" content="An on-chain order book AMM powering the evolution of DeFi " />
         <meta property="og:description" content="An on-chain order book AMM powering the evolution of DeFi " />
-        <meta property="og:url" content="https://aipooltee.fun/" />
+        <meta property="og:url" content="https://cobaltdex.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://img-v1.raydium.io/share/7be7ee6c-56b2-451e-a010-6c21e0db2ee5.png" />
-        <meta property="og:image:alt" content="AiPool" />
+        <meta property="og:image" content="https://ipfs.io/ipfs/bafybeih7q6cbugold4vw6wgjpil3zxav26xmeojemr6u2lmktrdhwhm2qm" />
+        <meta property="og:image:alt" content="CobaltDex" />
         <meta property="og:locale" content="en" />
-        <meta property="og:site_name" content="AiPool" />
-        <meta property="og:title" content="Swap | AiPool" />
-        <title>{pageProps?.title ? `${pageProps.title} AiPool` : 'AiPool'}</title>
+        <meta property="og:site_name" content="CobaltDex" />
+        <meta property="og:title" content="Swap | CobaltDex" />
+        <title>{pageProps?.title ? `${pageProps.title} CobaltDex` : 'CobaltDex'}</title>
       </Head>
       <DynamicProviders>
         {/* <GlobalBackground> */}
