@@ -1,4 +1,4 @@
-import { TOKEN_WSOL, WSOLMint, SOLMint, ApiV3Token, SOL_INFO, TokenInfo , USDCMint, USDTMint } from 'bifido-sdk'
+import { TOKEN_WSOL, WSOLMint, SOLMint, ApiV3Token, SOL_INFO, TokenInfo, USDCMint, USDTMint } from 'bifido-sdk'
 import { PublicKey } from '@solana/web3.js'
 import { sortItems } from '@/utils/sortItems'
 
