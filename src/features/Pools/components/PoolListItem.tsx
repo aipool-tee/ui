@@ -214,17 +214,21 @@ export default function PoolListItem({
                     <Tag size="sm" variant="rounded">
                       {formatToRawLocaleStr(toPercentString(pool.feeRate * 100))}
                     </Tag>
-                    <Tag size="sm" variant="rounded" color={colors.textRed} border="1px solid" borderColor={colors.textRed}>
-                      {Number.isInteger(pool.antisniperFee * 100) ? pool.antisniperFee * 100 : (pool.antisniperFee * 100).toFixed(2)}%
-                    </Tag>
-                    {pool.isOpenBook && (
-                      <Tooltip label="This pool shares liquidity to the OpenBook order-book">
-                        <Flex alignItems="center">
-                          <Tag size="sm" variant="rounded">
-                            <OpenBookIcon />
-                          </Tag>
-                        </Flex>
-                      </Tooltip>
+                    {pool.tvl < 1 ? (
+                      <Tag
+                        size="md"
+                        variant="rounded"
+                        color={colors.textRed}
+                        border="1px solid"
+                        borderColor={colors.textRed}
+                        fontWeight="bold"
+                      >
+                        Unwind
+                      </Tag>
+                    ) : (
+                      <Tag size="sm" variant="rounded" color={colors.textRed} border="1px solid" borderColor={colors.textRed}>
+                        {Number.isInteger(pool.antisniperFee * 100) ? pool.antisniperFee * 100 : (pool.antisniperFee * 100).toFixed(2)}%
+                      </Tag>
                     )}
                   </HStack>
                 </GridItem>
@@ -555,6 +559,22 @@ export default function PoolListItem({
                         <Tag size="sm" variant="rounded">
                           {formatToRawLocaleStr(toPercentString(pool.feeRate * 100))}
                         </Tag>
+                        {pool.tvl < 1 ? (
+                          <Tag
+                            size="md"
+                            variant="rounded"
+                            color={colors.textRed}
+                            border="1px solid"
+                            borderColor={colors.textRed}
+                            fontWeight="bold"
+                          >
+                            Unwind
+                          </Tag>
+                        ) : (
+                          <Tag size="sm" variant="rounded" color={colors.textRed} border="1px solid" borderColor={colors.textRed}>
+                            {Number.isInteger(pool.antisniperFee * 100) ? pool.antisniperFee * 100 : (pool.antisniperFee * 100).toFixed(2)}%
+                          </Tag>
+                        )}
                         {pool.isOpenBook ? (
                           <Tag size="sm" variant="rounded">
                             <OpenBookIcon />
