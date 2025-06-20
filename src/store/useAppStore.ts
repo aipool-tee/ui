@@ -307,7 +307,7 @@ export const useAppStore = createStore<AppState>(
           const readyRpcs = [...rpcs]
           if (localRpcNode?.rpcNode) readyRpcs.sort((a, b) => (a.name === localRpcNode.rpcNode!.name ? -1 : 1))
           const success = await setRpcUrlAct(
-            'https://mainnet.helius-rpc.com/?api-key=3037f54a-6c87-474f-8d93-c4d12b245aa1',
+            'https://old-winter-research.solana-mainnet.quiknode.pro/9f73059453a10b230392f1815d421cd60ef9f5b9/',
             true,
             i !== readyRpcs.length - 1
           )
