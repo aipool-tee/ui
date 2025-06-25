@@ -33,15 +33,15 @@ export default function SectionMyPositions() {
     {
       value: 'concentrated',
       label: t('portfolio.section_positions_tab_clmm')
-    },
-    {
-      value: 'standard',
-      label: t('portfolio.section_positions_tab_standard')
-    },
-    {
-      value: 'staked RAY',
-      label: t('portfolio.section_positions_tab_staking')
     }
+    // {
+    //   value: 'standard',
+    //   label: t('portfolio.section_positions_tab_standard')
+    // },
+    // {
+    //   value: 'staked RAY',
+    //   label: t('portfolio.section_positions_tab_staking')
+    // }
   ]
   const connected = useAppStore((s) => s.connected)
   const owner = useAppStore((s) => s.publicKey)
@@ -59,8 +59,8 @@ export default function SectionMyPositions() {
   }
 
   const isFocusClmmTab = currentTab === tabs[0].value
-  const isFocusStandardTab = currentTab === tabs[1].value
-  const isFocusStake = currentTab === tabs[2].value
+  // const isFocusStandardTab = currentTab === tabs[1].value
+  // const isFocusStake = currentTab === tabs[2].value
 
   const noRewardClmmPos = useRef<Set<string>>(new Set())
   const setNoRewardClmmPos = useEvent((poolId: string, isDelete?: boolean) => {
@@ -236,16 +236,6 @@ export default function SectionMyPositions() {
             setNoRewardClmmPos={setNoRewardClmmPos}
             refreshTag={refreshTag}
           />
-        ) : isFocusStandardTab ? (
-          <MyPositionTabStandard
-            isLoading={isFarmLoading}
-            allFarmBalances={allFarmBalances}
-            lpBasedData={farmLpBasedData}
-            stakedFarmMap={stakedFarmMap}
-            refreshTag={refreshTag}
-          />
-        ) : isFocusStake ? (
-          <MyPositionTabStaked allFarmBalances={allFarmBalances} farmLpBasedData={farmLpBasedData} refreshTag={refreshTag} />
         ) : null
       ) : (
         <SimpleGrid {...panelCard} placeItems={'center'} bg={colors.backgroundLight} borderRadius="12px" py={12}>

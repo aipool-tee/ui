@@ -63,10 +63,7 @@ const pageRoutePathnames: Record<keyof PageRouteConfigs, string> = {
   '(home)': '/',
   swap: '/swap',
   'edit-farm': '/farms/edit',
-  // TODO begreatfulforreal
-  // portfolio: '/portfolio',
-  // staking: '/staking',
-  portfolio: '/',
+  portfolio: '/portfolio',
   staking: '/',
   pools: '/liquidity-pools',
   'increase-liquidity': '/liquidity/increase',

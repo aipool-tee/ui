@@ -23,11 +23,11 @@ export default function Portfolio() {
       <Desktop>
         <PageHeroTitle title={t('portfolio.hero_title')} />
       </Desktop>
-      <AcceleraytorAlertChip />
-      <SectionOverview />
+      {/* <AcceleraytorAlertChip /> */}
+      {/* <SectionOverview /> */}
       <SectionMyPositions />
-      <SectionMyCreatedFarms />
-      <SectionAcceleraytor />
+      {/* <SectionMyCreatedFarms /> */}
+      {/* <SectionAcceleraytor /> */}
       <Box pb={'40px'} />
     </Box>
   )

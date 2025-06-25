@@ -49,13 +49,13 @@ export function MobileBottomNavbar() {
         icon={(colorMode) => <LiquidityPageThumbnailIcon colorMode={colorMode} isActive={isLiquidityActive} />}
         isActive={isLiquidityActive}
       />
-      {/* <BottomNavbarItem
+      <BottomNavbarItem
         href={protfolioHref}
         text={t('portfolio.title')}
         icon={(colorMode) => <PortfolioPageThumbnailIcon colorMode={colorMode} isActive={isPortfolioActive} />}
         isActive={isPortfolioActive}
       />
-      <BottomNavbarItem
+      {/* <BottomNavbarItem
         href="https://perps.raydium.io"
         text={t('perpetuals.title')}
         icon={(colorMode) => <PerpetualsPageThumbnailIcon colorMode={colorMode} isActive={false} />}
@@ -72,8 +72,6 @@ export function MobileBottomNavbar() {
         </MenuButton>
         <NavMoreButtonMenuPanel />
       </Menu> */}
-
-      
     </SimpleGrid>
   )
 }
